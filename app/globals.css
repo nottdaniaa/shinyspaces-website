@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
+/*
+ * ShinySpaces Design Tokens
+ * Approved palette and fonts — see docs/design-system.md and docs/design-tokens.md.
+ * Light-only theme: no automatic dark-mode inversion.
+ */
 :root {
+  /* Brand — Teal (primary action color) */
+  --primary: #04738c; /* 5.47:1 white text — buttons, links, primary UI */
+  --primary-hover: #035c70; /* 7.58:1 */
+  --primary-dark: #024657; /* 10.42:1 — dark sections, footer */
+  --primary-light: #4fc4d6; /* decorative/tint only — fails AA for text */
+
+  /* Brand — Gold (premium accent, used sparingly) */
+  --accent-gold: #a9812f; /* 3.58:1 — icons, borders, large UI only */
+  --accent-gold-hover: #8c6a22; /* 5.00:1 — safe for small text/links */
+
+  /* Neutrals */
   --background: #ffffff;
-  --foreground: #171717;
+  --surface: #ffffff;
+  --surface-alt: #f5f8f8;
+  --border: #e1e7e8;
+  --divider: #edf1f1;
+  --text-primary: #13181a;
+  --text-secondary: #5c6a6d; /* 5.62:1 */
+
+  /* Semantic */
+  --success: #1d8348; /* 4.78:1 */
+  --warning: #b7791f; /* 3.64:1 — large/UI only */
+  --warning-text: #8a5d17; /* safe for small warning text */
+  --error: #c0392b; /* 5.44:1 */
+
+  /* Elevation — cool-neutral; hover lift uses a teal tint tying shadow to brand */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 25, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 23, 25, 0.08);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 25, 0.12);
+  --shadow-hover: 0 16px 40px rgba(4, 115, 140, 0.18);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-foreground: var(--text-primary);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+
+  --color-accent-gold: var(--accent-gold);
+  --color-accent-gold-hover: var(--accent-gold-hover);
+
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-border: var(--border);
+  --color-divider: var(--divider);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-warning-text: var(--warning-text);
+  --color-error: var(--error);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  /* Radius */
+  --radius-button: 0.5rem; /* 8px */
+  --radius-input: 0.5rem; /* 8px */
+  --radius-card: 1rem; /* 16px */
+  --radius-modal: 1.25rem; /* 20px */
+  --radius-image: 0.75rem; /* 12px */
+
+  /* Shadows — exposed as Tailwind shadow-* utilities */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-hover: var(--shadow-hover);
+
+  /* Fluid type scale — mobile-first, scales via clamp() */
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1rem;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.25rem;
+  --text-body: 1rem;
+  --text-body--line-height: 1.625rem;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.875rem;
+  --text-h4: clamp(1.25rem, 1.15rem + 0.5vw, 1.375rem);
+  --text-h4--line-height: 1.3;
+  --text-h3: clamp(1.5rem, 1.3rem + 1vw, 1.75rem);
+  --text-h3--line-height: 1.25;
+  --text-h2: clamp(1.875rem, 1.5rem + 1.8vw, 2.5rem);
+  --text-h2--line-height: 1.15;
+  --text-h1: clamp(2.25rem, 1.7rem + 2.7vw, 3.5rem);
+  --text-h1--line-height: 1.08;
+  --text-display: clamp(2.75rem, 2rem + 3.75vw, 4.5rem);
+  --text-display--line-height: 1.03;
+
+  /* Section rhythm — fluid vertical spacing for page sections */
+  --spacing-section-y: clamp(4rem, 3rem + 4vw, 8rem);
+  --spacing-section-y-sm: clamp(3rem, 2.5rem + 2vw, 5rem);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
