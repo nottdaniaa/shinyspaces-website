@@ -13,9 +13,9 @@ This document is the factual reference for all ShinySpaces website content. Only
 | Primary location | Heber City, Utah |
 | Years in business | TBD |
 | Business structure/ownership | TBD |
-| Logo | TBD |
-| Brand colors | TBD |
-| Tagline/slogan | TBD |
+| Logo | Confirmed — logo file provided by the owner; stored at `public/images/branding/logo.jpeg`. Current file has a solid white background; a transparent-background version is still needed for use on dark/colored backgrounds. |
+| Brand colors | Confirmed direction: teal/turquoise and gold. Exact hex codes are **TBD** — pending formal approval. |
+| Tagline/slogan | "Transforming Spaces, Unleashing Shine!" |
 
 ---
 
@@ -104,7 +104,7 @@ Confirmed brand direction:
 
 | Field | Value |
 |---|---|
-| Specific brand colors | TBD |
+| Specific brand colors | Teal/turquoise and gold confirmed as the direction (per submitted logo); exact hex codes still **TBD** — pending formal approval |
 | Specific fonts (beyond project default) | TBD |
 | Reference sites/brands the owner likes | TBD |
 
@@ -170,7 +170,7 @@ The following must be collected from the business owner before the site can laun
 - Pricing structure and/or sample pricing
 - Typical response time to estimate requests
 - Detailed task checklist for each service
-- Logo and brand color/font specifications
+- Exact brand color hex codes (teal/turquoise and gold direction confirmed) and specific fonts
 - Real photos (team, before/after work, vehicles/branding if applicable)
 - Testimonials/reviews with permission to publish
 - Any current booking/scheduling software or link to integrate
