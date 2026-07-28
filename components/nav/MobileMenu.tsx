@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navItems } from "@/data/navigation";
+import { Button } from "@/components/ui/Button";
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -167,12 +168,9 @@ export function MobileMenu() {
         </nav>
 
         <div className="border-t border-divider px-4 py-4">
-          <Link
-            href="/get-estimate"
-            className="flex min-h-11 w-full items-center justify-center rounded-button bg-primary px-6 py-3 text-body font-semibold text-white transition-colors duration-150 hover:bg-primary-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-          >
-            Get a Free Quote
-          </Link>
+          <Button href="/get-estimate" size="lg" className="w-full">
+            Get a Free Estimate
+          </Button>
         </div>
       </div>
     </>

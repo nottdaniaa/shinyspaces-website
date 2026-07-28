@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { Logo } from "@/components/layout/Logo";
 import { StickyHeaderChrome } from "@/components/layout/StickyHeaderChrome";
@@ -24,12 +24,11 @@ export function Header() {
           <MainNav />
 
           <div className="flex items-center justify-end gap-2">
-            <Link
-              href="/get-estimate"
-              className="hidden min-h-11 items-center justify-center rounded-button bg-primary px-5 py-2.5 text-small font-semibold text-white transition-colors duration-150 hover:bg-primary-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:inline-flex"
-            >
-              Get a Free Quote
-            </Link>
+            <div className="hidden sm:inline-flex">
+              <Button href="/get-estimate" size="sm">
+                Get a Free Estimate
+              </Button>
+            </div>
 
             <MobileMenu />
           </div>
