@@ -3,12 +3,19 @@ import type { ReactNode } from "react";
 
 type ButtonVariant = "primary" | "secondary";
 type ButtonSize = "sm" | "lg";
+type ButtonTone = "light" | "dark";
 
-const variantClasses: Record<ButtonVariant, string> = {
-  primary: "bg-primary text-white hover:bg-primary-hover hover:shadow-hover active:bg-primary-dark",
-  secondary:
-    "border border-primary bg-transparent text-primary hover:bg-primary/[0.06] active:bg-primary/[0.12]",
-};
+function getVariantClasses(variant: ButtonVariant, tone: ButtonTone) {
+  if (variant === "primary") {
+    return "bg-primary text-white hover:bg-primary-hover hover:shadow-hover active:bg-primary-dark";
+  }
+
+  if (tone === "dark") {
+    return "border border-white/70 bg-transparent text-white hover:bg-white/10 active:bg-white/20";
+  }
+
+  return "border border-primary bg-transparent text-primary hover:bg-primary/[0.06] active:bg-primary/[0.12]";
+}
 
 const sizeClasses: Record<ButtonSize, string> = {
   sm: "px-5 py-2.5 text-small",
@@ -19,20 +26,38 @@ export function Button({
   href,
   variant = "primary",
   size = "sm",
+  tone = "light",
   className = "",
+  ariaLabel,
   children,
 }: {
   href: string;
   variant?: ButtonVariant;
   size?: ButtonSize;
+  tone?: ButtonTone;
   className?: string;
+  ariaLabel?: string;
   children: ReactNode;
 }) {
+  const ringClasses =
+    tone === "dark"
+      ? "focus-visible:ring-white focus-visible:ring-offset-transparent"
+      : "focus-visible:ring-primary focus-visible:ring-offset-2";
+
+  const classes = `inline-flex min-h-11 items-center justify-center rounded-button font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 ${ringClasses} ${getVariantClasses(variant, tone)} ${sizeClasses[size]} ${className}`;
+
+  // tel:/mailto: links aren't internal routes — use a plain anchor rather than
+  // next/link, which is built for client-side navigation between app routes.
+  if (href.startsWith("tel:") || href.startsWith("mailto:")) {
+    return (
+      <a href={href} aria-label={ariaLabel} className={classes}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link
-      href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-button font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
-    >
+    <Link href={href} aria-label={ariaLabel} className={classes}>
       {children}
     </Link>
   );

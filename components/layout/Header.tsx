@@ -4,6 +4,7 @@ import { Logo } from "@/components/layout/Logo";
 import { StickyHeaderChrome } from "@/components/layout/StickyHeaderChrome";
 import { MainNav } from "@/components/nav/MainNav";
 import { MobileMenu } from "@/components/nav/MobileMenu";
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
 
 export function Header() {
   return (
@@ -16,7 +17,7 @@ export function Header() {
       </a>
 
       <StickyHeaderChrome>
-        <Container className="grid h-16 grid-cols-[1fr_auto_1fr] items-center gap-4 xl:h-20 xl:grid-cols-[minmax(13rem,1fr)_auto_minmax(13rem,1fr)]">
+        <Container className="grid h-16 grid-cols-[1fr_auto_1fr] items-center gap-4 xl:h-20 xl:grid-cols-[minmax(17rem,1fr)_auto_minmax(17rem,1fr)]">
           <div className="flex items-center">
             <Logo />
           </div>
@@ -24,9 +25,12 @@ export function Header() {
           <MainNav />
 
           <div className="flex items-center justify-end gap-2">
-            <div className="hidden sm:inline-flex">
+            <div className="hidden items-center gap-2 xl:flex">
+              <Button href={PHONE_TEL_HREF} variant="secondary" size="sm" ariaLabel={`Call Now: ${PHONE_DISPLAY}`}>
+                Call Now
+              </Button>
               <Button href="/get-estimate" size="sm">
-                Get a Free Estimate
+                Free Estimate
               </Button>
             </div>
 

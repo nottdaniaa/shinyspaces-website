@@ -23,7 +23,7 @@ This document is the factual reference for all ShinySpaces website content. Only
 
 | Field | Value |
 |---|---|
-| Phone number | TBD |
+| Phone number | **Confirmed.** (626) 549-9782 — `tel:+16265499782` |
 | Email address | TBD |
 | Physical/mailing address | TBD |
 | Business hours | TBD |
@@ -44,6 +44,8 @@ Confirmed services offered:
 4. Move-In / Move-Out Cleaning
 5. Deep Cleaning
 6. Recurring Cleaning
+7. Post-Construction Cleaning
+8. Custom Cleaning Solutions
 
 | Field | Value |
 |---|---|
@@ -156,7 +158,6 @@ The following are common trust signals for a cleaning business, but **none may b
 
 The following must be collected from the business owner before the site can launch with accurate content:
 
-- Phone number
 - Email address
 - Physical/mailing address
 - Business hours

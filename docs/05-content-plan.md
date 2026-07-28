@@ -47,12 +47,12 @@ First touchpoint for nearly all traffic. Must communicate what ShinySpaces does,
 - Images needed: Simple line icons (no photography required).
 - FAQ opportunities: None.
 
-**3. Services Overview (grid)**
+**3. Services Overview (editorial grid)**
 - Purpose: Let visitors self-select the service relevant to them.
-- Key information: All 6 services, one line each, linking to their individual pages.
-- Recommended CTA: "Learn More" per card.
+- Key information: All 8 confirmed services (§3 of `02-business-profile.md`), each with a short description, linking to its individual page. Airbnb Turnover Cleaning receives the featured/largest placement, reflecting its role as a real differentiator for the business rather than defaulting to the most generic category. The grid's row rhythm is deliberately varied rather than mechanically repeated: Row 1 leads with Airbnb (hero) beside Residential and Commercial; Row 2 is a calmer paired row (Post-Construction + Recurring); Row 3 shifts the dominant card to the end (Deep + Move-In/Out + Custom).
+- Recommended CTA: none per card ("Learn More" text removed — the entire card is the link, with a corner arrow as the only visible affordance); closing CTA banner asks "Not sure which service fits your space?" and routes to `/get-estimate`.
 - Trust elements: None required.
-- Images needed: One icon or representative image per service (photography TBD; icons can ship without real photos).
+- Images needed: Real photography per service — TBD (`02-business-profile.md` §10). Until available, each service uses an abstract editorial media treatment (soft brand-toned gradient + subtle grain) in the exact aspect-ratio slot a real photo will later occupy, so photography can be swapped in without layout changes.
 - FAQ opportunities: None.
 
 **4. Why ShinySpaces (value props)**

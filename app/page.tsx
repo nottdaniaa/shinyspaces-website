@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
+import { Services } from "@/components/home/Services";
 
 export const metadata: Metadata = {
   title: "ShinySpaces | Cleaning Services in Heber City, UT & the Heber Valley",
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <Services />
+    </>
+  );
 }
