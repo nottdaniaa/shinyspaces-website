@@ -24,11 +24,22 @@ This document is the factual reference for all ShinySpaces website content. Only
 | Field | Value |
 |---|---|
 | Phone number | **Confirmed.** (626) 549-9782 — `tel:+16265499782` |
-| Email address | TBD |
+| Email address | **Confirmed by owner:** `hello@shineyspaces.info` — ⚠️ **verify before wiring, see note below** |
 | Physical/mailing address | TBD |
 | Business hours | TBD |
-| Social media links | TBD |
+| Social media links | TBD — a Facebook page exists (recommendation posts are sourced from it in Section 9), but no public URL has been confirmed for display |
 | Booking/scheduling link (if any) | TBD |
+
+### Estimate submission destination
+
+The owner's stated workflow: website form submissions should create a lead in the CRM; **if no CRM is available, submissions go to the business email.**
+
+- **No CRM has been named, selected, or configured.** "The CRM" is referenced but not identified, so CRM integration remains **TBD**.
+- The operative destination is therefore the **business email above**, once verified.
+- **Nothing is connected yet.** The `/get-estimate` form is deliberately non-submitting until a destination is verified — see `components/forms/EstimateForm.tsx`.
+
+> ⚠️ **Unresolved discrepancy — verify before connecting the form.**
+> The confirmed email domain is `shineyspaces.info` ("shin**e**yspaces", `.info`). The business's own marketing graphics display `shinyspaces.co` ("shinyspaces", `.co`) — a different spelling *and* a different TLD. One of the two is wrong. **Send a live test email to the address and confirm receipt before wiring any form to it**; a wrong address loses estimate requests silently, with no bounce visible to the customer.
 
 **Note:** No phone number, email, hours, or social link should appear on the site until confirmed here.
 
@@ -49,10 +60,83 @@ Confirmed services offered:
 
 | Field | Value |
 |---|---|
-| What's included in each service (detailed task checklist) | TBD |
-| Pricing or pricing structure (flat rate, hourly, per sq ft, quote-only) | TBD |
-| Add-on services (if any) | TBD |
-| Supplies/equipment provided (by ShinySpaces vs. client) | TBD |
+| What's included in each service (detailed task checklist) | **Confirmed by owner — see §3.1 below** |
+| Pricing or pricing structure (flat rate, hourly, per sq ft, quote-only) | **Quote-only.** Free estimates based on the home's size, condition, and services requested. **No figures confirmed — never publish a price.** |
+| Add-on services (if any) | **Confirmed** — see Residential "Extras" in §3.1 |
+| Supplies/equipment provided (by ShinySpaces vs. client) | **Confirmed.** ShinySpaces brings professional cleaning products and equipment, unless the client requests their own be used. |
+| Typical duration | **Confirmed.** Most homes take between 2 and 5 hours, depending on size and condition. Always state as a range with those qualifiers — never as a fixed promise. |
+
+---
+
+## 3.1 Confirmed Service Scope
+
+Owner-confirmed. This is the canonical source for `data/serviceContent.ts` and the `/services/[slug]` pages. Publish only what appears here.
+
+### Residential Cleaning
+
+**Kitchen:** clean and sanitise countertops · wipe cabinet fronts · clean sink and faucet · clean outside of appliances · clean microwave inside and out · wipe backsplash · empty trash · vacuum and mop floors
+
+**Bathrooms:** scrub and disinfect toilets · clean shower and bathtub · clean sinks and countertops · polish mirrors · wipe fixtures · empty trash · vacuum and mop floors
+
+**Bedrooms:** make beds (if clean linens are left out) · dust furniture · wipe reachable surfaces · vacuum floors and rugs · mop hard floors · empty trash
+
+**Living areas:** dust furniture · wipe tables · vacuum carpets and rugs · mop hard floors · straighten cushions · dust window sills
+
+**Extras (on request):** interior windows · baseboards · inside refrigerator · inside oven · laundry folding · organisation
+
+**Excluded:** heavy hoarding · biohazard cleanup · mold removal · pest removal · exterior windows · carpet shampooing · lifting heavy furniture
+
+### Commercial Cleaning
+
+**Included:** offices · break rooms · bathrooms · lobbies · waiting areas · trash removal · vacuuming · mopping · dusting · sanitising high-touch surfaces · restocking paper products if provided
+
+**Excluded:** industrial cleaning · hazardous waste · large floor stripping or waxing · specialty equipment cleaning
+
+### Airbnb Turnover Cleaning
+
+**Included:** full cleaning between guests · change bed linens · replace towels · kitchen cleaning · bathroom sanitising · restock guest supplies (provided by owner) · check for damages · remove trash · final walkthrough · ready for next guest
+
+**Optional:** inventory check · photo updates after every turnover
+
+### Recurring Cleaning
+
+**Frequencies:** weekly · biweekly · every 4 weeks
+
+**Note:** recurring customers receive priority scheduling and consistent cleaners whenever possible. "Whenever possible" is part of the confirmed wording — do not publish it as a guarantee.
+
+### Move-In / Move-Out Cleaning
+
+**Included:** inside cabinets · inside drawers · inside refrigerator · inside oven · baseboards · doors · trim · interior windows · bathrooms · kitchen · floors · closets
+
+### Deep Cleaning
+
+Everything in a standard cleaning, plus: hand-wiping baseboards · door frames · ceiling fans · light fixtures · detailed bathroom scrubbing · behind furniture when accessible · extra dust removal
+
+### Post-Construction Cleaning
+
+**Included:** dust removal · vacuuming · fine dust wipe-down · window cleaning · trim cleaning · cabinet cleaning · floor cleaning
+
+**Excluded:** construction debris hauling · hazardous materials
+
+### Custom Cleaning Solutions
+
+No fixed checklist. A custom cleaning checklist is built around the client's needs, schedule, and budget.
+
+---
+
+## 3.2 Confirmed Customer FAQs
+
+Owner-confirmed answers. **The insurance question was explicitly withdrawn by the owner and must not be published** — insured status remains TBD in §9 and prohibited in §11.
+
+| Question | Confirmed answer |
+|---|---|
+| How much does house cleaning cost? | Every home is different. Free estimates based on the home's size, condition, and services requested. |
+| Do I need to be home? | No. Many clients provide a door code or key so cleaning can happen while they're away. |
+| Do you bring your own supplies? | Yes — professional products and equipment, unless the client asks for their own to be used. |
+| How long does a cleaning take? | Most homes take between 2 and 5 hours depending on size and condition. |
+| Can I schedule recurring cleanings? | Yes — weekly, biweekly, and monthly recurring service. |
+| What if I need to reschedule? | Let us know as soon as possible and we'll find another appointment. |
+| Do you clean Airbnb properties? | Yes — turnover cleanings to keep the property guest-ready between stays. |
 
 ---
 
@@ -135,9 +219,27 @@ Confirmed brand direction:
 
 ## 9. Confirmed Trust Signals
 
-**None confirmed at this time.**
+**Two trust signals are confirmed: the satisfaction guarantee and a set of sourced customer recommendations (both below). All others remain unconfirmed** and may not be used on the website until explicitly confirmed by the business owner.
 
-The following are common trust signals for a cleaning business, but **none may be used on the website until explicitly confirmed** by the business owner:
+### Confirmed
+
+**Customer recommendations — confirmed for website use.** 17 verified Facebook recommendation posts are currently available for approved website use, each with a source URL. The full text of each is recorded in `data/reviews.ts`.
+
+Important limits on how this may be characterised:
+
+- These 17 are **posts available for website use — not the business's public review total.** Facebook has not confirmed an aggregate count, so the public total remains TBD and must not be stated or implied.
+- **Aggregate review count: TBD.** Do not publish "17 reviews", "17+ reviews", or any other total.
+- **Star rating: TBD.** Facebook recommendations are **binary recommendations, not star ratings**. A rating must never be inferred, calculated, or displayed from them.
+- Quotes are published verbatim, including customer typos. They must not be silently corrected.
+- Reviewers are shown as first name + last initial; each card links to the original public post.
+
+**Satisfaction guarantee — confirmed.** Exact policy as provided by the business owner:
+
+> If you are not satisfied with any part of your cleaning, contact us within 24 hours and we will return to re-clean the affected area at no additional charge.
+
+This is the only guarantee wording approved for use. It must be shown in full where the guarantee is referenced — an unqualified "100% satisfaction guaranteed" with no stated remedy or time window is still not permitted (see §11).
+
+### Still unconfirmed
 
 | Potential trust signal | Status |
 |---|---|
@@ -149,7 +251,6 @@ The following are common trust signals for a cleaning business, but **none may b
 | Years in business | TBD — not confirmed |
 | Number of customers served | TBD — not confirmed |
 | Review count / star rating | TBD — not confirmed |
-| Satisfaction guarantee | TBD — not confirmed |
 | Awards/affiliations | TBD — not confirmed |
 
 ---
@@ -158,21 +259,20 @@ The following are common trust signals for a cleaning business, but **none may b
 
 The following must be collected from the business owner before the site can launch with accurate content:
 
-- Email address
+- **Email verification** — the address in §2 is confirmed by the owner but its domain conflicts with the domain printed on the business's own marketing graphics. Send a test message and confirm receipt before connecting any form.
+- CRM selection — the owner's workflow references "the CRM" but none has been named or configured
 - Physical/mailing address
 - Business hours
-- Social media links
+- Social media links (a Facebook page exists; no public URL confirmed for display)
 - Years in business
-- Licensing, insurance, and bonding status
+- Licensing, insurance, and bonding status — **the owner explicitly withdrew the "fully insured" claim; it must not be published**
 - Any certifications held
 - Staff background-check policy (if any)
-- Number of reviews and average rating (with source, e.g., Google Business Profile)
-- Any guarantees actually offered (e.g., re-clean policy)
-- Pricing structure and/or sample pricing
+- Sample pricing figures — the pricing *model* is confirmed as quote-only in §3, but no figures exist
 - Typical response time to estimate requests
-- Detailed task checklist for each service
-- Real photos (team, before/after work, vehicles/branding if applicable)
-- Testimonials/reviews with permission to publish
+- More matched before/after photo pairs — several exist only as pre-composited social graphics with baked-in logos and Before/After labels, which are unusable in the gallery. Original individual files are needed.
+- Real photos (team, vehicles/branding if applicable)
+- Public aggregate review count and average star rating (with source, e.g., Google Business Profile) — note that the 17 sourced Facebook recommendation posts in Section 9 are **not** a public total and must not be presented as one
 - Any current booking/scheduling software or link to integrate
 
 ---
@@ -184,7 +284,8 @@ The website must **not** state, imply, or display any of the following until con
 - A specific number of years in business (e.g., "10+ years of experience")
 - Any certification names or badges
 - Any review count or star rating (e.g., "4.9 stars from 120+ reviews")
-- Any guarantee language (e.g., "100% satisfaction guaranteed," "re-clean guarantee")
+- Any guarantee language **beyond the confirmed 24-hour re-clean policy recorded in Section 9**. That policy may be used, quoted in full. An unqualified "100% satisfaction guaranteed" claim — with no stated remedy or time window — must still not be used.
+- Any star rating implied through imagery. Decorative stars or laurels inside supplied artwork must not be described in copy, headings, or alt text as a rating, award, certification, or accreditation.
 - Any pricing or starting-price figures
 - Any promised response time (e.g., "we respond within 1 hour")
 - Any phone number, email address, business hours, or social media link not listed in Section 2

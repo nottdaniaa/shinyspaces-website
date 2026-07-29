@@ -179,7 +179,7 @@ Present the residential cleaning service clearly enough that a homeowner underst
 
 **2. What's Included**
 - Purpose: Set concrete expectations about the scope of work.
-- Key information: Task-by-task checklist of what a residential cleaning covers — **TBD**, since the detailed task checklist per service is unconfirmed (`02-business-profile.md` §3).
+- Key information: **Confirmed — see `02-business-profile.md` §3.1**, the canonical source. Not duplicated here to avoid drift. Rendered by `data/serviceContent.ts` via `ServiceIncludes`. Covers Kitchen, Bathrooms, Bedrooms, Living areas, and on-request Extras, plus a confirmed exclusions list.
 - Recommended CTA: None.
 - Trust elements: Specificity itself is the trust signal here — avoid vague language once the real checklist exists.
 - Images needed: Icon checklist or task-specific photography.
@@ -272,7 +272,7 @@ Reassure a business owner that ShinySpaces can be scheduled around business hour
 
 **2. What's Included**
 - Purpose: Set expectations for commercial-scope work.
-- Key information: Task checklist for commercial cleaning — **TBD** (`02-business-profile.md` §3).
+- Key information: **Confirmed — see `02-business-profile.md` §3.1**, the canonical source. Not duplicated here to avoid drift. Rendered by `data/serviceContent.ts` via `ServiceIncludes`. Covers spaces served and per-visit tasks, plus a confirmed exclusions list.
 - Recommended CTA: None.
 - Trust elements: Specificity.
 - Images needed: Task-specific photography.
@@ -365,7 +365,7 @@ Reassure hosts that ShinySpaces understands guest-turnaround timing and can be t
 
 **2. What's Included**
 - Purpose: Set concrete expectations for what "turnover cleaning" means.
-- Key information: Task checklist — **TBD** for exact confirmed scope, but the blueprint's draft list (full interior cleaning, linen changing, towel restocking, kitchen/bathroom sanitizing, trash removal, guest amenity restocking, damage/maintenance flagging, photo-ready staging check) should be confirmed against real service scope before publishing.
+- Key information: **Confirmed — see `02-business-profile.md` §3.1**, the canonical source. Not duplicated here to avoid drift. Rendered by `data/serviceContent.ts` via `ServiceIncludes`. Covers every-turnover tasks plus optional inventory check and photo updates. The blueprint's earlier draft list is superseded.
 - Recommended CTA: None.
 - Trust elements: Specificity.
 - Images needed: Task-specific before/after photos.
@@ -458,7 +458,7 @@ Reassure a mid-move visitor that a thorough, deadline-aware clean is available f
 
 **2. What's Included**
 - Purpose: Set expectations for scope.
-- Key information: Task checklist — **TBD** (`02-business-profile.md` §3).
+- Key information: **Confirmed — see `02-business-profile.md` §3.1**, the canonical source. Not duplicated here to avoid drift. Rendered by `data/serviceContent.ts` via `ServiceIncludes`.
 - Recommended CTA: None.
 - Trust elements: Specificity.
 - Images needed: Empty-unit before/after photography.
@@ -551,7 +551,7 @@ Clarify what makes a "deep clean" different from a standard cleaning and drive t
 
 **2. What's Included**
 - Purpose: Set expectations for the expanded scope.
-- Key information: Task checklist — **TBD** (`02-business-profile.md` §3), expected to include areas standard cleanings don't reach (baseboards, inside appliances, grout, vents, etc.).
+- Key information: **Confirmed — see `02-business-profile.md` §3.1**, the canonical source. Not duplicated here to avoid drift. Rendered by `data/serviceContent.ts` via `ServiceIncludes`. Defined as everything in a standard cleaning plus additional detail work.
 - Recommended CTA: None.
 - Trust elements: Specificity.
 - Images needed: Detail-level before/after photography.
@@ -644,7 +644,7 @@ Present recurring plans as simple and flexible, and serve as the natural next st
 
 **2. What's Included**
 - Purpose: Clarify that recurring plans use the same task scope as the underlying service (residential/commercial/Airbnb), just on a schedule.
-- Key information: Explain that scope follows the base service type — **TBD** pending each service's confirmed task checklist.
+- Key information: Scope follows the base service type. **Confirmed — see `02-business-profile.md` §3.1**, the canonical source. Not duplicated here to avoid drift. Rendered by `data/serviceContent.ts` via `ServiceIncludes`.
 - Recommended CTA: None.
 - Trust elements: Specificity once confirmed.
 - Images needed: None required.
@@ -914,12 +914,14 @@ Show real results. **This page should not launch until real before/after photogr
 - Images needed: None required beyond the grid itself.
 - FAQ opportunities: None.
 
-**2. Before/After Grid (filterable by service type)**
-- Purpose: Visual proof, organized by service.
-- Key information: Real before/after image pairs — **entirely TBD**, none exist yet (`02-business-profile.md` §10).
-- Recommended CTA: Contextual — a visitor filtering to "Airbnb" should see "Get a Turnover Cleaning Quote" rather than the generic estimate CTA (fixes the weak-CTA gap flagged in the consistency review).
+**2. Featured Before/After + Curated Photography Grid**
+- Purpose: Visual proof through real completed work.
+- Key information: **One verified before-and-after pair** (window blinds — matched angle and framing) is presented as the featured interactive comparison. A second pair (bathroom sink) exists but was shot from differing angles, so it is shown as two labelled panels rather than a wipe slider. The remainder is **curated finished-cleaning photography**, presented without captions.
+- **No category filters.** Filters must not be added until enough media exists *with confirmed service classifications*. The current media set has no confirmed service categories, so filtering would require inventing them.
+- **No duplicated or fabricated gallery content.** Images must not be repeated to make the grid look fuller, and captions, locations, project dates, and service labels must not be invented.
+- Recommended CTA: "Get a Free Estimate," plus the confirmed phone number. Contextual per-category CTAs are deferred until confirmed service classifications exist.
 - Trust elements: Authentic photography is the trust element itself.
-- Images needed: Full set of real before/after photos — TBD.
+- Images needed: More matched before/after pairs, and non-bathroom subjects (kitchen, living area, commercial) — the current set skews heavily to bathrooms.
 - FAQ opportunities: None.
 
 **3. CTA Banner**

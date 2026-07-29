@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
 import { Services } from "@/components/home/Services";
+import { WhatToExpect } from "@/components/home/WhatToExpect";
+import { WhyChooseUs } from "@/components/home/WhyChooseUs";
+import { Gallery } from "@/components/home/Gallery";
+import { ReviewsCarousel } from "@/components/home/ReviewsCarousel";
 
 export const metadata: Metadata = {
   title: "ShinySpaces | Cleaning Services in Heber City, UT & the Heber Valley",
@@ -13,6 +17,10 @@ export default function Home() {
     <>
       <Hero />
       <Services />
+      <WhatToExpect />
+      <WhyChooseUs />
+      <Gallery />
+      <ReviewsCarousel />
     </>
   );
 }

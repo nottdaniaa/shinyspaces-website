@@ -78,7 +78,7 @@
   /* Radius */
   --radius-button: 0.5rem; /* 8px */
   --radius-input: 0.5rem; /* 8px */
-  --radius-card: 1rem; /* 16px */
+  --radius-card: 0.5rem; /* 8px — sharpened from 16px for a crisper, less "templated" card edge */
   --radius-modal: 1.25rem; /* 20px */
   --radius-image: 0.75rem; /* 12px */
 

@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
-import { EditorialSurface } from "@/components/home/EditorialSurface";
 import { ServiceCard } from "@/components/home/ServiceCard";
 import { services } from "@/data/services";
 
@@ -22,17 +22,28 @@ export function Services() {
             </p>
           </div>
 
-          <EditorialSurface tone="teal" aspect="wide" className="lg:aspect-[4/3]">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-image ring-1 ring-inset ring-border/50 lg:aspect-[4/3]">
+            <Image
+              src="/images/home/serving-heber-valley.png"
+              alt="Bright living room with panoramic mountain views, representing the communities ShinySpaces serves throughout the Heber Valley"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"
+            />
             <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-10">
-              <p className="font-manrope text-h2 font-semibold text-text-primary">
+              <p className="font-manrope text-h2 font-semibold text-white">
                 Serving 8 Local Communities
               </p>
-              <p className="mt-2 max-w-xs text-body text-text-secondary">
+              <p className="mt-2 max-w-xs text-body text-white/85">
                 Based in Heber City and serving nearby communities throughout the surrounding
                 area.
               </p>
             </div>
-          </EditorialSurface>
+          </div>
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4 lg:items-start lg:gap-x-10 lg:gap-y-20">

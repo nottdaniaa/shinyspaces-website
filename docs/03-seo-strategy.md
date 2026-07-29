@@ -174,7 +174,8 @@ Each entry below maps to a page in `01-website-blueprint.md` §2 Site Map. Slugs
 - **Secondary keyword:** vacation rental turnover cleaning
 - **Search intent:** Transactional, urgency-driven
 - **Suggested title:** Airbnb & Vacation Rental Turnover Cleaning | ShinySpaces
-- **Suggested meta description:** Fast, reliable Airbnb and short-term rental turnover cleaning across Heber City, Park City, and Midway. Book your turnover cleaning today.
+- **Meta description:** Fast, reliable Airbnb and short-term rental turnover cleaning across Heber City, Park City, and Midway. Request a turnover cleaning quote today.
+  - *Corrected during implementation:* previously ended "Book your turnover cleaning today." No online booking exists (§2 booking link is TBD), so "Book" promised a capability the site doesn't have. Changed to "Request a turnover cleaning quote," which matches the actual conversion path.
 - **Suggested H1:** Airbnb & Vacation Rental Turnover Cleaning
 - **URL slug:** `/services/airbnb-turnover-cleaning`
 - **Internal links:** to `/services/recurring-cleaning`, Park City and Midway town pages, `/get-estimate`
@@ -196,7 +197,8 @@ Each entry below maps to a page in `01-website-blueprint.md` §2 Site Map. Slugs
 - **Secondary keyword:** spring cleaning service Heber Valley
 - **Search intent:** Transactional, some research intent
 - **Suggested title:** Deep Cleaning Services in Heber City, UT | ShinySpaces
-- **Suggested meta description:** A thorough, top-to-bottom deep clean for your home — baseboards, appliances, grout, and more. Serving Heber City and the surrounding valley.
+- **Meta description:** A thorough, top-to-bottom deep clean for your home across Heber City and the surrounding Heber Valley. Request your free estimate today.
+  - *Corrected during implementation:* previously read "baseboards, appliances, grout, and more." **Grout is not in the confirmed deep-cleaning scope** (`02-business-profile.md` §3.1), and neither is appliance cleaning — inside-refrigerator and inside-oven are confirmed Residential *extras* and Move-In/Out tasks, not deep-cleaning inclusions. Advertising unconfirmed tasks in a meta description sets an expectation the service doesn't commit to. Baseboards *are* confirmed, but the list was removed wholesale rather than leaving a partially accurate one.
 - **Suggested H1:** Deep Cleaning Services
 - **URL slug:** `/services/deep-cleaning`
 - **Internal links:** to `/services/residential-cleaning`, `/services/move-in-move-out-cleaning`, `/get-estimate`
@@ -212,6 +214,40 @@ Each entry below maps to a page in `01-website-blueprint.md` §2 Site Map. Slugs
 - **URL slug:** `/services/recurring-cleaning`
 - **Internal links:** to `/services/residential-cleaning`, `/services/airbnb-turnover-cleaning`, `/services/commercial-cleaning`, `/get-estimate`
 - **CTA:** "Set Up a Recurring Plan"
+
+### Post-Construction Cleaning
+
+> **Added during implementation.** This service is confirmed in `02-business-profile.md` §3 and present in `data/services.ts`, but had no SEO entry in this document. The copy below is the authored implementation copy now live in `data/serviceContent.ts` — recorded here so the codebase and this strategy no longer disagree. Keywords are proposed, not validated against search-volume data.
+
+- **Primary keyword:** post construction cleaning Heber City
+- **Secondary keyword:** post renovation cleaning Heber Valley
+- **Search intent:** Transactional, project-driven — searched at the end of a build or remodel
+- **Title:** Post-Construction Cleaning in Heber City, UT | ShinySpaces
+- **Meta description:** Detailed post-construction and post-renovation cleaning across Heber City and the Heber Valley, clearing dust and debris so the space is ready to use.
+- **H1:** Post-Construction Cleaning
+- **URL slug:** `/services/post-construction-cleaning`
+- **Canonical:** `/services/post-construction-cleaning` (set via `generateMetadata`, matching the site-wide pattern)
+- **Internal links:** to `/services/deep-cleaning`, `/services/commercial-cleaning`, `/services/custom-cleaning-solutions`, `/get-estimate`
+- **Related services:** Deep Cleaning, Commercial Cleaning, Custom Cleaning Solutions
+- **CTA:** "Get a Free Estimate"
+- **Note:** this page carries one of only two genuine before/after pairs on the site, which is its strongest differentiator. Lead with that asset rather than adding claims.
+
+### Custom Cleaning Solutions
+
+> **Added during implementation**, for the same reason as the entry above. Copy matches `data/serviceContent.ts`.
+
+- **Primary keyword:** custom cleaning services Heber City
+- **Secondary keyword:** specialty cleaning Heber Valley
+- **Search intent:** Transactional, non-standard requirement — the visitor has already failed to find their need in a standard service list
+- **Title:** Custom Cleaning Solutions in Heber City, UT | ShinySpaces
+- **Meta description:** Cleaning built around properties that don't fit a standard checklist, across Heber City and the surrounding Heber Valley. Request a free estimate.
+- **H1:** Custom Cleaning Solutions
+- **URL slug:** `/services/custom-cleaning-solutions`
+- **Canonical:** `/services/custom-cleaning-solutions` (set via `generateMetadata`)
+- **Internal links:** to `/services/residential-cleaning`, `/services/commercial-cleaning`, `/services/post-construction-cleaning`, `/get-estimate`
+- **Related services:** Residential Cleaning, Commercial Cleaning, Post-Construction Cleaning
+- **CTA:** "Get a Free Estimate"
+- **Note:** this page has no fixed task checklist by design (`02-business-profile.md` §3.1), so the "What's included" section is intentionally omitted rather than filled. Keep it that way — a generic checklist here would contradict the page's entire premise.
 
 ### Service Areas Hub
 - **Primary keyword:** cleaning services Heber Valley
@@ -254,9 +290,10 @@ Template applied per town — example shown for Park City, repeat pattern for th
 - **Primary keyword:** cleaning before and after Heber City
 - **Secondary keyword:** house cleaning results photos
 - **Search intent:** Research/trust-building
-- **Suggested title:** Before & After Gallery | ShinySpaces Cleaning
-- **Suggested meta description:** See real before-and-after results from ShinySpaces cleaning projects across the Heber Valley.
-- **Suggested H1:** See the ShinySpaces Difference
+- **Title (as built):** Cleaning Gallery | ShinySpaces Heber City, UT
+- **Meta description (as built):** Real photos from completed ShinySpaces cleaning jobs across Heber City and the surrounding Heber Valley, including a before-and-after look at a full blind cleaning.
+- **H1 (as built):** Cleaning Results You Can See
+- **Note on the departure from "Before & After" framing:** the current media set contains only **one** genuine matched before/after pair (window blinds). A second pair exists (bathroom sink) but the two shots were taken from different angles, so it is presented as two labelled panels rather than a wipe slider. Leading the title and H1 with before/after would over-promise against the available photography. Revisit this framing once more matched pairs are collected — the primary keyword above remains the target.
 - **URL slug:** `/gallery`
 - **Internal links:** to relevant service pages, `/get-estimate`
 - **CTA:** "Get a Free Estimate"

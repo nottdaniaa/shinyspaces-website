@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fraunces, Manrope } from "next/font/google";
+import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileCTABar } from "@/components/layout/MobileCTABar";
 import "./globals.css";
@@ -17,6 +18,8 @@ const geistMono = Geist_Mono({
 const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
+  // Italic is used for the two-tone section headlines (e.g. "…to Refresh").
+  style: ["normal", "italic"],
 });
 
 const manrope = Manrope({
@@ -44,6 +47,7 @@ export default function RootLayout({
         <main id="main-content" className="flex-1 pb-20 xl:pb-0">
           {children}
         </main>
+        <Footer />
         <MobileCTABar />
       </body>
     </html>
