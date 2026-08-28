@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
-import { EstimateForm } from "@/components/forms/EstimateForm";
-import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
+import { JobberEstimateEmbed } from "@/components/forms/JobberEstimateEmbed";
+import { PHONE_DISPLAY, PHONE_TEL_HREF, SITE_URL } from "@/lib/constants";
+
+const TITLE = "Get a Free Estimate | ShinySpaces Cleaning – Heber City, UT";
+const DESCRIPTION =
+  "Request a free, no-obligation cleaning estimate from ShinySpaces. Serving Heber City, Midway, Park City, and the surrounding Heber Valley.";
 
 export const metadata: Metadata = {
-  title: "Get a Free Estimate | ShinySpaces Cleaning – Heber City, UT",
-  description:
-    "Request a free, no-obligation cleaning estimate from ShinySpaces. Serving Heber City, Midway, Park City, and the surrounding Heber Valley.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/get-estimate" },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: `${SITE_URL}/get-estimate`,
+    images: ["/images/og-default.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/images/og-default.jpg"],
+  },
 };
 
 /*
@@ -68,7 +84,18 @@ export default function GetEstimatePage() {
             </div>
           </div>
 
-          <EstimateForm />
+          <div className="rounded-card bg-surface p-6 shadow-sm ring-1 ring-border/60 sm:p-8">
+            <p className="font-display text-h4 font-semibold text-text-primary">
+              Request your free estimate online
+            </p>
+            <p className="mt-2 text-body text-text-secondary">
+              Tell us about your property and the cleaning you need. We&apos;ll follow up to
+              confirm the scope and estimate before anything is scheduled.
+            </p>
+            <div className="mt-6">
+              <JobberEstimateEmbed />
+            </div>
+          </div>
         </div>
       </Container>
     </section>

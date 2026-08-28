@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { HeroBackground } from "@/components/home/HeroBackground";
-import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
+import { EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -23,17 +23,22 @@ export function Hero() {
           </p>
 
           <div className="animate-fade-up mt-8 flex flex-col gap-3 [animation-delay:160ms] sm:flex-row">
-            <Button href="/get-estimate" size="lg" tone="dark">
-              Get a Free Estimate
-            </Button>
             <Button
               href={PHONE_TEL_HREF}
+              size="lg"
+              tone="dark"
+              ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+            >
+              Call or Text for a Free Estimate
+            </Button>
+            <Button
+              href={EMAIL_HREF}
               variant="secondary"
               size="lg"
               tone="dark"
-              ariaLabel={`Call Now: ${PHONE_DISPLAY}`}
+              ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
             >
-              Call Now
+              Email Us
             </Button>
           </div>
         </div>

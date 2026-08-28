@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { navItems, type NavChildLink, type NavItem } from "@/data/navigation";
 
 const linkClasses =
-  "relative inline-flex min-h-11 items-center gap-1 rounded-input px-3 text-body font-medium text-text-primary transition-colors duration-150 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-center after:rounded-full after:bg-primary after:transition-transform after:duration-200 after:content-[''] hover:after:scale-x-100";
+  "relative inline-flex min-h-11 items-center gap-1 whitespace-nowrap rounded-input px-3 text-body font-medium text-text-primary transition-colors duration-150 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-center after:rounded-full after:bg-primary after:transition-transform after:duration-200 after:content-[''] hover:after:scale-x-100";
 
 function isActive(pathname: string, item: NavItem) {
   if (item.href === "/") return pathname === "/";

@@ -13,7 +13,7 @@ This document is the factual reference for all ShinySpaces website content. Only
 | Primary location | Heber City, Utah |
 | Years in business | TBD |
 | Business structure/ownership | TBD |
-| Logo | Confirmed — logo file provided by the owner; stored at `public/images/branding/logo.jpeg`. Current file has a solid white background; a transparent-background version is still needed for use on dark/colored backgrounds. |
+| Logo | Confirmed — logo file provided by the owner; stored at `public/images/branding/logo.jpeg` (solid white background, used in the header) and `public/images/branding/logo.png` (transparent background, generated from the source file for use on dark/colored backgrounds — e.g. the footer). |
 | Brand colors | **Final, approved.** Primary Teal `#04738C`, Accent Gold `#A9812F` (plus documented hover/dark/light variants). See `docs/design-system.md` §1 and `docs/design-tokens.md`. |
 | Tagline/slogan | "Transforming Spaces, Unleashing Shine!" |
 
@@ -24,10 +24,10 @@ This document is the factual reference for all ShinySpaces website content. Only
 | Field | Value |
 |---|---|
 | Phone number | **Confirmed.** (626) 549-9782 — `tel:+16265499782` |
-| Email address | **Confirmed by owner:** `hello@shineyspaces.info` — ⚠️ **verify before wiring, see note below** |
+| Email address | **Confirmed by owner:** `hello@shinyspaces.info` |
 | Physical/mailing address | TBD |
-| Business hours | TBD |
-| Social media links | TBD — a Facebook page exists (recommendation posts are sourced from it in Section 9), but no public URL has been confirmed for display |
+| Business hours | **Confirmed.** Monday–Saturday: 7:00 AM–7:00 PM. Sunday: closed. |
+| Social media links | **Confirmed.** Facebook: `https://www.facebook.com/profile.php?id=61553864103161` · TikTok: `https://www.tiktok.com/@shiny.spaces` — canonical URLs with tracking parameters (`_r`, `_t`, `mibextid`) stripped |
 | Booking/scheduling link (if any) | TBD |
 
 ### Estimate submission destination
@@ -38,8 +38,7 @@ The owner's stated workflow: website form submissions should create a lead in th
 - The operative destination is therefore the **business email above**, once verified.
 - **Nothing is connected yet.** The `/get-estimate` form is deliberately non-submitting until a destination is verified — see `components/forms/EstimateForm.tsx`.
 
-> ⚠️ **Unresolved discrepancy — verify before connecting the form.**
-> The confirmed email domain is `shineyspaces.info` ("shin**e**yspaces", `.info`). The business's own marketing graphics display `shinyspaces.co` ("shinyspaces", `.co`) — a different spelling *and* a different TLD. One of the two is wrong. **Send a live test email to the address and confirm receipt before wiring any form to it**; a wrong address loses estimate requests silently, with no bounce visible to the customer.
+> The confirmed public business email is a Gmail address and does not depend on the website's public domain.
 
 **Note:** No phone number, email, hours, or social link should appear on the site until confirmed here.
 
@@ -259,11 +258,8 @@ This is the only guarantee wording approved for use. It must be shown in full wh
 
 The following must be collected from the business owner before the site can launch with accurate content:
 
-- **Email verification** — the address in §2 is confirmed by the owner but its domain conflicts with the domain printed on the business's own marketing graphics. Send a test message and confirm receipt before connecting any form.
 - CRM selection — the owner's workflow references "the CRM" but none has been named or configured
-- Physical/mailing address
-- Business hours
-- Social media links (a Facebook page exists; no public URL confirmed for display)
+- Physical/mailing address — **this is now the last field blocking `LocalBusiness` schema.** Hours are confirmed (§2); once an address exists, review the full schema in one pass so name, URL, phone, address, hours, and areaServed stay consistent.
 - Years in business
 - Licensing, insurance, and bonding status — **the owner explicitly withdrew the "fully insured" claim; it must not be published**
 - Any certifications held

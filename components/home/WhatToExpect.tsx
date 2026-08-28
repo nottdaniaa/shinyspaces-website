@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
 
 type Step = {
   number: string;
@@ -224,8 +225,13 @@ export function WhatToExpect() {
         {/* Closing CTA row */}
         <div className="mt-8 flex flex-col items-center justify-center gap-5 border-t border-divider pt-6 sm:flex-row sm:gap-6">
           <p className="font-display text-h4 italic text-primary">Ready to get started?</p>
-          <Button href="/get-estimate" size="lg" className="shrink-0">
-            Get a Free Estimate
+          <Button
+            href={PHONE_TEL_HREF}
+            size="lg"
+            className="shrink-0"
+            ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+          >
+            Call or Text for a Free Estimate
           </Button>
         </div>
       </Container>

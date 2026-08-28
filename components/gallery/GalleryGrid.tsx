@@ -20,18 +20,19 @@ export function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
     <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-7">
       {photos.map((photo) => (
         <li key={photo.src} className={photo.span === "full" ? "sm:col-span-2" : undefined}>
-          <div className="group overflow-hidden rounded-image shadow-sm ring-1 ring-border/50 transition-[transform,box-shadow] duration-200 ease-standard hover:-translate-y-1 hover:shadow-md">
+          <div
+            className={`group relative overflow-hidden rounded-image shadow-sm ring-1 ring-border/50 transition-[transform,box-shadow] duration-200 ease-standard hover:-translate-y-1 hover:shadow-md ${photo.span === "full" ? "aspect-[16/9]" : "aspect-[4/3]"}`}
+          >
             <Image
               src={photo.src}
               alt={photo.alt}
-              width={photo.width}
-              height={photo.height}
+              fill
               sizes={
                 photo.span === "full"
                   ? "(min-width: 1024px) 1120px, 100vw"
                   : "(min-width: 640px) 50vw, 100vw"
               }
-              className="h-auto w-full transition-transform duration-200 ease-standard group-hover:scale-[1.02]"
+              className="object-cover transition-transform duration-200 ease-standard group-hover:scale-[1.02]"
             />
           </div>
         </li>

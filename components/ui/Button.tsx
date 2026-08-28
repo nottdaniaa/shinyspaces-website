@@ -29,6 +29,7 @@ export function Button({
   tone = "light",
   className = "",
   ariaLabel,
+  external = false,
   children,
 }: {
   href: string;
@@ -37,6 +38,7 @@ export function Button({
   tone?: ButtonTone;
   className?: string;
   ariaLabel?: string;
+  external?: boolean;
   children: ReactNode;
 }) {
   const ringClasses =
@@ -44,13 +46,19 @@ export function Button({
       ? "focus-visible:ring-white focus-visible:ring-offset-transparent"
       : "focus-visible:ring-primary focus-visible:ring-offset-2";
 
-  const classes = `inline-flex min-h-11 items-center justify-center rounded-button font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 ${ringClasses} ${getVariantClasses(variant, tone)} ${sizeClasses[size]} ${className}`;
+  const classes = `inline-flex min-h-11 items-center justify-center whitespace-nowrap rounded-button font-manrope font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 ${ringClasses} ${getVariantClasses(variant, tone)} ${sizeClasses[size]} ${className}`;
 
-  // tel:/mailto: links aren't internal routes — use a plain anchor rather than
+  // tel:/mailto: links and external destinations (e.g. Jobber's hosted
+  // request form) aren't internal routes — use a plain anchor rather than
   // next/link, which is built for client-side navigation between app routes.
-  if (href.startsWith("tel:") || href.startsWith("mailto:")) {
+  if (href.startsWith("tel:") || href.startsWith("mailto:") || external) {
     return (
-      <a href={href} aria-label={ariaLabel} className={classes}>
+      <a
+        href={href}
+        aria-label={ariaLabel}
+        className={classes}
+        {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      >
         {children}
       </a>
     );

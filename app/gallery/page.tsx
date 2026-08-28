@@ -3,12 +3,28 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { BeforeAfterMedia } from "@/components/ui/BeforeAfterMedia";
 import { ComparisonPair, GalleryGrid, type GalleryPhoto } from "@/components/gallery/GalleryGrid";
-import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
+import { EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF, SITE_URL } from "@/lib/constants";
+
+const TITLE = "Cleaning Gallery | ShinySpaces Heber City, UT";
+const DESCRIPTION =
+  "Real photos from completed ShinySpaces cleaning jobs across Heber City and the surrounding Heber Valley, including a before-and-after look at a full blind cleaning.";
 
 export const metadata: Metadata = {
-  title: "Cleaning Gallery | ShinySpaces Heber City, UT",
-  description:
-    "Real photos from completed ShinySpaces cleaning jobs across Heber City and the surrounding Heber Valley, including a before-and-after look at a full blind cleaning.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/gallery" },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: `${SITE_URL}/gallery`,
+    images: ["/images/og-default.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/images/og-default.jpg"],
+  },
 };
 
 // Finished-result photography. Intrinsic dimensions are the real file sizes so
@@ -152,16 +168,20 @@ export default function GalleryPage() {
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button href="/get-estimate" size="lg">
-                Get a Free Estimate
-              </Button>
               <Button
                 href={PHONE_TEL_HREF}
+                size="lg"
+                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+              >
+                Call or Text for a Free Estimate
+              </Button>
+              <Button
+                href={EMAIL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Call Now: ${PHONE_DISPLAY}`}
+                ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
               >
-                Call Now
+                Email Us
               </Button>
             </div>
           </div>

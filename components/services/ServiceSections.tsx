@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { BeforeAfterMedia } from "@/components/ui/BeforeAfterMedia";
-import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
+import { EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
 import type {
   Benefit,
   Exclusions,
@@ -44,16 +44,20 @@ export function ServiceHero({ service }: { service: ServiceContent }) {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="/get-estimate" size="lg">
-                Get a Free Estimate
-              </Button>
               <Button
                 href={PHONE_TEL_HREF}
+                size="lg"
+                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+              >
+                Call or Text for a Free Estimate
+              </Button>
+              <Button
+                href={EMAIL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Call ShinySpaces at ${PHONE_DISPLAY}`}
+                ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
               >
-                Call {PHONE_DISPLAY}
+                Email Us
               </Button>
             </div>
           </div>
@@ -392,16 +396,20 @@ export function ServiceCTA({ heading, description }: { heading: string; descript
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-body text-text-secondary">{description}</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href="/get-estimate" size="lg">
-              Get a Free Estimate
-            </Button>
             <Button
               href={PHONE_TEL_HREF}
+              size="lg"
+              ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+            >
+              Call or Text for a Free Estimate
+            </Button>
+            <Button
+              href={EMAIL_HREF}
               variant="secondary"
               size="lg"
-              ariaLabel={`Call ShinySpaces at ${PHONE_DISPLAY}`}
+              ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
             >
-              Call {PHONE_DISPLAY}
+              Email Us
             </Button>
           </div>
         </div>

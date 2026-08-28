@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navItems } from "@/data/navigation";
 import { Button } from "@/components/ui/Button";
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -168,8 +169,13 @@ export function MobileMenu() {
         </nav>
 
         <div className="border-t border-divider px-4 py-4">
-          <Button href="/get-estimate" size="lg" className="w-full">
-            Get a Free Estimate
+          <Button
+            href={PHONE_TEL_HREF}
+            size="lg"
+            className="w-full"
+            ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+          >
+            Call or Text for a Free Estimate
           </Button>
         </div>
       </div>

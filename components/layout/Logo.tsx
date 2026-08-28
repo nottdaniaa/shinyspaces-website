@@ -13,7 +13,7 @@ export function Logo() {
         width={2000}
         height={2000}
         priority
-        className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+        className="h-14 w-14 object-contain sm:h-16 sm:w-16"
       />
     </Link>
   );

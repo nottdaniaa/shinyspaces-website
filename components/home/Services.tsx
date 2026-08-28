@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { ServiceCard } from "@/components/home/ServiceCard";
 import { services } from "@/data/services";
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
 
 export function Services() {
   return (
@@ -57,8 +58,13 @@ export function Services() {
             Not sure which service fits your space?
           </p>
 
-          <Button href="/get-estimate" size="sm" className="shrink-0">
-            Get a Free Estimate
+          <Button
+            href={PHONE_TEL_HREF}
+            size="sm"
+            className="shrink-0"
+            ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+          >
+            Call or Text
           </Button>
         </div>
       </Container>

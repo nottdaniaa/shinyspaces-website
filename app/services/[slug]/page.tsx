@@ -14,8 +14,7 @@ import {
   ServiceIntroduction,
   ServiceProcess,
 } from "@/components/services/ServiceSections";
-
-const SITE_URL = "https://shinyspaces.co";
+import { SITE_URL } from "@/lib/constants";
 
 export function generateStaticParams() {
   return serviceContent.map((service) => ({ slug: service.slug }));
@@ -35,6 +34,18 @@ export async function generateMetadata({
     title: service.seoTitle,
     description: service.metaDescription,
     alternates: { canonical: `/services/${service.slug}` },
+    openGraph: {
+      title: service.seoTitle,
+      description: service.metaDescription,
+      url: `${SITE_URL}/services/${service.slug}`,
+      images: [service.heroImage.src],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: service.seoTitle,
+      description: service.metaDescription,
+      images: [service.heroImage.src],
+    },
   };
 }
 
