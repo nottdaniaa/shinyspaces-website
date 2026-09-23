@@ -60,16 +60,16 @@ export function AboutHero() {
             <span className="italic text-primary">Care for every space.</span>
           </h1>
           <p className="mt-6 max-w-lg text-body-lg text-text-secondary">
-            ShinySpaces cleans homes, rentals, and businesses throughout Heber City and the
-            surrounding Heber Valley. Every property is different, so every estimate is built
-            around yours.
+            Shiny Spaces Cleaning is a mobile service-area business. We come to homes, rentals, and
+            businesses throughout Heber City and the Heber Valley, Utah. Every property is
+            different, so every estimate is built around yours.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button
               href={PHONE_TEL_HREF}
               size="lg"
-              ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+              ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
             >
               Call or Text for a Free Estimate
             </Button>
@@ -77,7 +77,7 @@ export function AboutHero() {
               href={EMAIL_HREF}
               variant="secondary"
               size="lg"
-              ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+              ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
             >
               Email Us
             </Button>
@@ -96,7 +96,7 @@ export function HowWeClean() {
           <div className="overflow-hidden rounded-image shadow-sm ring-1 ring-border/50">
             <Image
               src="/images/gallery/bathroom-tub-shower.png"
-              alt="Clean white bathtub, shower, and toilet in a bathroom finished by ShinySpaces"
+              alt="Clean white bathtub, shower, and toilet in a bathroom finished by Shiny Spaces Cleaning"
               width={1124}
               height={1399}
               sizes="(min-width: 1024px) 50vw, 100vw"
@@ -337,7 +337,7 @@ export function LifestyleCTA() {
               <Button
                 href={PHONE_TEL_HREF}
                 size="lg"
-                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+                ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
               >
                 Call or Text for a Free Estimate
               </Button>
@@ -350,7 +350,7 @@ export function LifestyleCTA() {
           <div className="order-1 h-full lg:order-2">
             <Image
               src="/images/gallery/bedroom-made-bed.png"
-              alt="Bed made with fresh linens and a neatly finished headboard after a ShinySpaces cleaning"
+              alt="Bed made with fresh linens and a neatly finished headboard after a visit from Shiny Spaces Cleaning"
               width={1086}
               height={1448}
               sizes="(min-width: 1024px) 50vw, 100vw"

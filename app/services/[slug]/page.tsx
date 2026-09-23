@@ -14,7 +14,8 @@ import {
   ServiceIntroduction,
   ServiceProcess,
 } from "@/components/services/ServiceSections";
-import { SITE_URL } from "@/lib/constants";
+import { BUSINESS_NAME, SITE_URL } from "@/lib/constants";
+import { areaServed, BUSINESS_ID, BUSINESS_URL } from "@/lib/localBusiness";
 
 export function generateStaticParams() {
   return serviceContent.map((service) => ({ slug: service.slug }));
@@ -67,7 +68,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
    *   offer would be both false and a schema violation.
    * - FAQPage: emitted only when confirmed FAQs are actually rendered on screen,
    *   which is Google's requirement for it to be valid.
-   * - LocalBusiness is deliberately absent: it needs address and hours, both TBD.
+   * - The sitewide CleaningService entity (name, phone, email, Utah service
+   *   area, no street address) lives in app/layout.tsx. This provider points
+   *   at that same @id so the name cannot drift.
    */
   const graph: Record<string, unknown>[] = [
     {
@@ -88,17 +91,13 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       name: service.serviceName,
       description: service.metaDescription,
       serviceType: service.serviceName,
-      provider: { "@type": "Organization", name: "ShinySpaces", url: SITE_URL },
-      areaServed: [
-        "Heber City",
-        "Midway",
-        "Park City",
-        "Kamas",
-        "Hideout",
-        "Daniel",
-        "Charleston",
-        "Wallsburg",
-      ].map((name) => ({ "@type": "City", name })),
+      provider: {
+        "@type": "CleaningService",
+        "@id": BUSINESS_ID,
+        name: BUSINESS_NAME,
+        url: BUSINESS_URL,
+      },
+      areaServed,
     },
   ];
 

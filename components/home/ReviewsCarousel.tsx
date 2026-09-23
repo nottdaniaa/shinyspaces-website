@@ -243,7 +243,7 @@ export function ReviewsCarousel() {
                         {review.name}
                       </span>
                       <span className="mt-1 block text-caption text-text-secondary">
-                        recommends ShinySpaces
+                        recommends Shiny Spaces Cleaning
                       </span>
                       <a
                         href={review.sourceUrl}

@@ -42,18 +42,19 @@ export function ServiceAreaHero() {
             className="text-balance font-display text-h1 font-semibold tracking-tight text-text-primary"
           >
             Cleaning Services Across the{" "}
-            <span className="italic text-primary">Heber Valley</span>
+            <span className="italic text-primary">Heber Valley, Utah</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-body-lg text-text-secondary">
-            ShinySpaces is based in Heber City and cleans homes, rentals, and businesses in eight
-            nearby communities. If your town is on the list below, we can come to you.
+            Shiny Spaces Cleaning is a mobile service-area business based in Heber City, Utah. We
+            come to homes, rentals, and businesses in the eight Utah communities below. There is
+            no public storefront.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button
               href={PHONE_TEL_HREF}
               size="lg"
-              ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+              ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
             >
               Call or Text for a Free Estimate
             </Button>
@@ -61,7 +62,7 @@ export function ServiceAreaHero() {
               href={EMAIL_HREF}
               variant="secondary"
               size="lg"
-              ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+              ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
             >
               Email Us
             </Button>
@@ -111,7 +112,7 @@ function TownCard({ town }: { town: TownCard }) {
       </div>
 
       <p className="mt-3 text-small text-text-secondary">
-        {town.description ?? "All ShinySpaces cleaning services are available in this community."}
+        {town.description ?? "All Shiny Spaces Cleaning services are available in this community."}
       </p>
 
       {/* Both links name the town in their accessible label, so a screen-reader
@@ -126,7 +127,7 @@ function TownCard({ town }: { town: TownCard }) {
         </Link>
         <a
           href={PHONE_TEL_HREF}
-          aria-label={`Call or text ShinySpaces for a free cleaning estimate in ${town.name}`}
+          aria-label={`Call or text Shiny Spaces Cleaning for a free cleaning estimate in ${town.name}`}
           className="rounded-input text-small font-semibold text-text-secondary underline-offset-4 transition-colors duration-150 ease-standard hover:text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         >
           Call or Text for a Free Estimate
@@ -203,8 +204,8 @@ export function ValleyBand() {
                 offices on the main road.
               </p>
               <p>
-                It also means we are not coming from hours away. Heber City is where we are
-                based, and the towns above are the ones we cover.
+                It also means we are not coming from hours away. We are based in Heber City, Utah,
+                and the towns above are the Utah communities we cover.
               </p>
             </div>
           </div>
@@ -354,7 +355,7 @@ export function ServiceAreaCTA() {
             <Button
               href={PHONE_TEL_HREF}
               size="lg"
-              ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+              ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
             >
               Call or Text for a Free Estimate
             </Button>
@@ -362,7 +363,7 @@ export function ServiceAreaCTA() {
               href={EMAIL_HREF}
               variant="secondary"
               size="lg"
-              ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+              ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
             >
               Email Us
             </Button>

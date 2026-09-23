@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF, SITE_URL } from "@/lib/constants";
 
-const TITLE = "Frequently Asked Questions | ShinySpaces Cleaning – Heber City, UT";
+const TITLE = "Frequently Asked Questions | Shiny Spaces Cleaning – Heber City, UT";
 const DESCRIPTION =
-  "Answers to common questions about ShinySpaces cleaning services in Heber City and the Heber Valley — estimates, access, supplies, scheduling, and Airbnb turnovers.";
+  "Answers to common questions about Shiny Spaces Cleaning services in Heber City and the Heber Valley — estimates, access, supplies, scheduling, and Airbnb turnovers.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -176,7 +176,7 @@ export default function FaqPage() {
               <Button
                 href={PHONE_TEL_HREF}
                 size="lg"
-                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+                ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
               >
                 Call or Text for a Free Estimate
               </Button>
@@ -184,7 +184,7 @@ export default function FaqPage() {
                 href={EMAIL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+                ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
               >
                 Email Us
               </Button>

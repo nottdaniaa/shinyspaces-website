@@ -5,9 +5,9 @@ import { BeforeAfterMedia } from "@/components/ui/BeforeAfterMedia";
 import { ComparisonPair, GalleryGrid, type GalleryPhoto } from "@/components/gallery/GalleryGrid";
 import { EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF, SITE_URL } from "@/lib/constants";
 
-const TITLE = "Cleaning Gallery | ShinySpaces Heber City, UT";
+const TITLE = "Cleaning Gallery | Shiny Spaces Cleaning Heber City, UT";
 const DESCRIPTION =
-  "Real photos from completed ShinySpaces cleaning jobs across Heber City and the surrounding Heber Valley, including a before-and-after look at a full blind cleaning.";
+  "Real photos from completed Shiny Spaces Cleaning jobs across Heber City and the surrounding Heber Valley, including a before-and-after look at a full blind cleaning.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -32,26 +32,26 @@ export const metadata: Metadata = {
 const finishedWork: GalleryPhoto[] = [
   {
     src: "/images/gallery/bedroom-turnover.png",
-    alt: "Bedroom made up with fresh linens, styled pillows, and rolled towels after a ShinySpaces turnover cleaning",
+    alt: "Bedroom made up with fresh linens, styled pillows, and rolled towels after a Shiny Spaces Cleaning turnover cleaning",
     width: 1451,
     height: 1084,
     span: "full",
   },
   {
     src: "/images/gallery/bathroom-clawfoot-tub.png",
-    alt: "Bathroom with a clawfoot tub, double vanity, and folded towels after a ShinySpaces cleaning",
+    alt: "Bathroom with a clawfoot tub, double vanity, and folded towels after a visit from Shiny Spaces Cleaning",
     width: 1023,
     height: 1537,
   },
   {
     src: "/images/gallery/bedroom-vacuumed-carpet.png",
-    alt: "Empty bedroom with freshly vacuumed carpet after a ShinySpaces cleaning",
+    alt: "Empty bedroom with freshly vacuumed carpet after a visit from Shiny Spaces Cleaning",
     width: 1119,
     height: 1406,
   },
   {
     src: "/images/gallery/bathroom-finishing-touches.png",
-    alt: "Folded tissue and a tidied counter left as finishing touches after a ShinySpaces cleaning",
+    alt: "Folded tissue and a tidied counter left as finishing touches after a visit from Shiny Spaces Cleaning",
     width: 1173,
     height: 1341,
     span: "full",
@@ -60,14 +60,14 @@ const finishedWork: GalleryPhoto[] = [
 
 const sinkBefore: GalleryPhoto = {
   src: "/images/gallery/sink-before.png",
-  alt: "Bathroom sink crowded with toiletries and soiled around the basin before a ShinySpaces cleaning",
+  alt: "Bathroom sink crowded with toiletries and soiled around the basin before a visit from Shiny Spaces Cleaning",
   width: 1448,
   height: 1086,
 };
 
 const sinkAfter: GalleryPhoto = {
   src: "/images/gallery/sink-after.jpeg",
-  alt: "The same bathroom vanity cleared and wiped down after a ShinySpaces cleaning",
+  alt: "The same bathroom vanity cleared and wiped down after a visit from Shiny Spaces Cleaning",
   width: 1320,
   height: 1320,
 };
@@ -119,11 +119,11 @@ export default function GalleryPage() {
             <BeforeAfterMedia
               before={{
                 src: "/images/gallery/blinds-before.png",
-                alt: "Window blinds coated in dust and grime before a ShinySpaces cleaning",
+                alt: "Window blinds coated in dust and grime before a visit from Shiny Spaces Cleaning",
               }}
               after={{
                 src: "/images/gallery/blinds-after.png",
-                alt: "The same window blinds wiped clean after a ShinySpaces cleaning",
+                alt: "The same window blinds wiped clean after a visit from Shiny Spaces Cleaning",
               }}
               aspectRatio="portrait"
               className="mx-auto w-full max-w-md lg:max-w-none"
@@ -171,7 +171,7 @@ export default function GalleryPage() {
               <Button
                 href={PHONE_TEL_HREF}
                 size="lg"
-                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+                ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
               >
                 Call or Text for a Free Estimate
               </Button>
@@ -179,7 +179,7 @@ export default function GalleryPage() {
                 href={EMAIL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+                ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
               >
                 Email Us
               </Button>

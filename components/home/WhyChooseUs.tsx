@@ -63,11 +63,11 @@ export function WhyChooseUs() {
             id="why-choose-heading"
             className="text-balance font-display text-h2 font-semibold tracking-tight text-text-primary"
           >
-            Why Heber City Homes and Businesses Choose ShinySpaces
+            Why Heber City Homes and Businesses Choose Shiny Spaces Cleaning
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-body-lg text-text-secondary">
-            ShinySpaces handles residential and commercial cleaning throughout Heber City and the
-            surrounding Heber Valley. That covers everything from routine house cleaning and deep
+            Shiny Spaces Cleaning handles residential and commercial cleaning throughout Heber City
+            and the Heber Valley, Utah. That covers everything from routine house cleaning and deep
             cleans to Airbnb turnovers between guests.
           </p>
         </div>

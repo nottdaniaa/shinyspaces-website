@@ -10,47 +10,47 @@ type Photo = {
   height: number;
 };
 
-// Every photo here is a real ShinySpaces job supplied by the business owner.
+// Every photo here is a real Shiny Spaces Cleaning job supplied by the business owner.
 // Alt text describes what is actually visible — no claimed awards, ratings, or
 // locations beyond the confirmed service area.
 const clawfootTub: Photo = {
   src: "/images/gallery/bathroom-clawfoot-tub.png",
-  alt: "Bathroom with a clawfoot tub, double vanity, and folded towels after a ShinySpaces cleaning",
+  alt: "Bathroom with a clawfoot tub, double vanity, and folded towels after a visit from Shiny Spaces Cleaning",
   width: 1023,
   height: 1537,
 };
 
 const vacuumedCarpet: Photo = {
   src: "/images/gallery/bedroom-vacuumed-carpet.png",
-  alt: "Empty bedroom with freshly vacuumed carpet after a ShinySpaces cleaning",
+  alt: "Empty bedroom with freshly vacuumed carpet after a visit from Shiny Spaces Cleaning",
   width: 1119,
   height: 1406,
 };
 
 const bedroomTurnover: Photo = {
   src: "/images/gallery/bedroom-turnover.png",
-  alt: "Bedroom made up with fresh linens, styled pillows, and rolled towels after a ShinySpaces turnover cleaning",
+  alt: "Bedroom made up with fresh linens, styled pillows, and rolled towels after a Shiny Spaces Cleaning turnover cleaning",
   width: 1451,
   height: 1084,
 };
 
 const finishingTouches: Photo = {
   src: "/images/gallery/bathroom-finishing-touches.png",
-  alt: "Folded tissue and a tidied counter left as finishing touches after a ShinySpaces cleaning",
+  alt: "Folded tissue and a tidied counter left as finishing touches after a visit from Shiny Spaces Cleaning",
   width: 1173,
   height: 1341,
 };
 
 const sinkBefore: Photo = {
   src: "/images/gallery/sink-before.png",
-  alt: "Bathroom sink crowded with toiletries and soiled around the basin before a ShinySpaces cleaning",
+  alt: "Bathroom sink crowded with toiletries and soiled around the basin before a visit from Shiny Spaces Cleaning",
   width: 1448,
   height: 1086,
 };
 
 const sinkAfter: Photo = {
   src: "/images/gallery/sink-after.jpeg",
-  alt: "The same bathroom vanity cleared and wiped down after a ShinySpaces cleaning",
+  alt: "The same bathroom vanity cleared and wiped down after a visit from Shiny Spaces Cleaning",
   width: 1320,
   height: 1320,
 };
@@ -90,11 +90,11 @@ export function Gallery() {
             <BeforeAfterMedia
               before={{
                 src: "/images/gallery/blinds-before.png",
-                alt: "Window blinds coated in dust and grime before a ShinySpaces cleaning",
+                alt: "Window blinds coated in dust and grime before a visit from Shiny Spaces Cleaning",
               }}
               after={{
                 src: "/images/gallery/blinds-after.png",
-                alt: "The same window blinds wiped clean after a ShinySpaces cleaning",
+                alt: "The same window blinds wiped clean after a visit from Shiny Spaces Cleaning",
               }}
               aspectRatio="portrait"
             />

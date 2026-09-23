@@ -4,6 +4,7 @@ import { Container } from "@/components/layout/Container";
 import { serviceAreas } from "@/data/serviceAreas";
 import { services } from "@/data/services";
 import {
+  BUSINESS_NAME,
   EMAIL_ADDRESS,
   EMAIL_HREF,
   OPENING_HOURS,
@@ -12,6 +13,7 @@ import {
   PHONE_TEL_HREF,
   SOCIAL_LINKS,
 } from "@/lib/constants";
+import { SAB_SUMMARY } from "@/lib/localBusiness";
 
 /*
  * Only routes that actually exist are listed. Town names remain plain text —
@@ -52,21 +54,26 @@ export function Footer() {
           <div>
             <Link
               href="/"
-              className="inline-flex rounded-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark"
+              className="inline-flex items-center gap-3 rounded-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark"
             >
               <Image
                 src="/images/branding/logo.png"
-                alt="ShinySpaces — home"
+                alt=""
                 width={2000}
                 height={2000}
                 sizes="80px"
                 className="h-16 w-16 object-contain sm:h-20 sm:w-20"
               />
+              <span className="font-manrope text-body font-semibold leading-tight text-white">
+                {BUSINESS_NAME}
+              </span>
             </Link>
 
             <p className="mt-5 max-w-xs font-display text-body-lg italic text-white/90">
               Transforming Spaces, Unleashing Shine!
             </p>
+
+            <p className="mt-4 max-w-xs text-small text-white/80">{SAB_SUMMARY}</p>
 
             {/* Wrapped in a flex column: as bare inline-flex anchors these two
                 shared a line box and their vertical margins collapsed, leaving
@@ -74,7 +81,7 @@ export function Footer() {
             <div className="mt-6 flex flex-col items-start gap-3">
               <a
                 href={PHONE_TEL_HREF}
-                aria-label={`Call ShinySpaces at ${PHONE_DISPLAY}`}
+                aria-label={`Call Shiny Spaces Cleaning at ${PHONE_DISPLAY}`}
                 className="flex items-center gap-2 rounded-input text-body font-semibold text-white underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark"
               >
                 <PhoneIcon className="h-4 w-4 shrink-0" />
@@ -120,17 +127,17 @@ export function Footer() {
                 row of unlabelled links is unusable on a screen reader. */}
             <ul className="mt-6 flex flex-wrap items-center gap-3">
               <li>
-                <IconLink href={PHONE_TEL_HREF} label={`Call ShinySpaces at ${PHONE_DISPLAY}`}>
+                <IconLink href={PHONE_TEL_HREF} label={`Call Shiny Spaces Cleaning at ${PHONE_DISPLAY}`}>
                   <PhoneIcon className="h-4 w-4" />
                 </IconLink>
               </li>
               <li>
-                <IconLink href={PHONE_SMS_HREF} label={`Text ShinySpaces at ${PHONE_DISPLAY}`}>
+                <IconLink href={PHONE_SMS_HREF} label={`Text Shiny Spaces Cleaning at ${PHONE_DISPLAY}`}>
                   <MessageIcon className="h-4 w-4" />
                 </IconLink>
               </li>
               <li>
-                <IconLink href={EMAIL_HREF} label={`Email ShinySpaces at ${EMAIL_ADDRESS}`}>
+                <IconLink href={EMAIL_HREF} label={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}>
                   <MailIcon className="h-4 w-4" />
                 </IconLink>
               </li>
@@ -138,7 +145,7 @@ export function Footer() {
                 <li key={social.label}>
                   <IconLink
                     href={social.href}
-                    label={`ShinySpaces on ${social.label} (opens in a new tab)`}
+                    label={`Shiny Spaces Cleaning on ${social.label} (opens in a new tab)`}
                     external
                   >
                     {social.label === "Facebook" ? (
@@ -187,11 +194,11 @@ export function Footer() {
           </div>
 
           <div>
-            <FooterHeading>Areas We Serve</FooterHeading>
+            <FooterHeading>Areas We Serve in Utah</FooterHeading>
             <ul className="mt-5 flex flex-col gap-3">
               {serviceAreas.map((area) => (
                 <li key={area} className="text-small text-white/80">
-                  {area}
+                  {area}, UT
                 </li>
               ))}
             </ul>
@@ -200,7 +207,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/15 pt-8">
           <p className="text-caption text-white/70">
-            &copy; {year} ShinySpaces. All rights reserved.
+            &copy; {year} {BUSINESS_NAME}. Heber City, Utah. All rights reserved.
           </p>
         </div>
       </Container>

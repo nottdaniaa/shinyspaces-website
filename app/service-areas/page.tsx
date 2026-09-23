@@ -10,9 +10,9 @@ import {
 } from "@/components/service-areas/ServiceAreaSections";
 import { SITE_URL } from "@/lib/constants";
 
-const TITLE = "Service Areas | ShinySpaces Cleaning – Heber Valley, UT";
+const TITLE = "Service Areas | Shiny Spaces Cleaning – Heber Valley, UT";
 const DESCRIPTION =
-  "ShinySpaces serves Heber City, Midway, Park City, Kamas, Hideout, Daniel, Charleston, and Wallsburg. Find residential, commercial, and Airbnb cleaning in your town.";
+  "Shiny Spaces Cleaning serves Heber City, Midway, Park City, Kamas, Hideout, Daniel, Charleston, and Wallsburg. Find residential, commercial, and Airbnb cleaning in your town.";
 
 export const metadata: Metadata = {
   title: TITLE,

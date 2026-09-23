@@ -7,9 +7,9 @@ import { Gallery } from "@/components/home/Gallery";
 import { ReviewsCarousel } from "@/components/home/ReviewsCarousel";
 import { SITE_URL } from "@/lib/constants";
 
-const TITLE = "ShinySpaces | Cleaning Services in Heber City, UT & the Heber Valley";
+const TITLE = "Shiny Spaces Cleaning | Cleaning Services in Heber City, UT & the Heber Valley";
 const DESCRIPTION =
-  "ShinySpaces provides residential, commercial, and Airbnb turnover cleaning throughout Heber City, Midway, Park City, and the surrounding Heber Valley. Request a free estimate today.";
+  "Shiny Spaces Cleaning is a mobile service-area business in Heber City, Utah. Residential, commercial, and Airbnb turnover cleaning across the Heber Valley. Request a free estimate.";
 
 export const metadata: Metadata = {
   title: TITLE,

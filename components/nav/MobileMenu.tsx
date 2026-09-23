@@ -173,7 +173,7 @@ export function MobileMenu() {
             href={PHONE_TEL_HREF}
             size="lg"
             className="w-full"
-            ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+            ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
           >
             Call or Text for a Free Estimate
           </Button>

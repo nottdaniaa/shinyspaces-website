@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/Button";
-import { EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
+import { BUSINESS_NAME, EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF } from "@/lib/constants";
 
 export function MobileCTABar() {
   return (
@@ -7,19 +7,19 @@ export function MobileCTABar() {
       <Button
         href={EMAIL_HREF}
         variant="secondary"
-        size="lg"
+        size="sm"
         className="flex-1"
-        ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+        ariaLabel={`Email ${BUSINESS_NAME} at ${EMAIL_ADDRESS}`}
       >
         Email Us
       </Button>
       <Button
         href={PHONE_TEL_HREF}
-        size="lg"
-        className="flex-1"
-        ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+        size="sm"
+        className="min-w-0 flex-[1.45] px-3"
+        ariaLabel={`Call or text ${BUSINESS_NAME} at ${PHONE_DISPLAY} for a free estimate`}
       >
-        Call or Text
+        {PHONE_DISPLAY}
       </Button>
     </div>
   );
