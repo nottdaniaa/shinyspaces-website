@@ -40,7 +40,7 @@ export function Services() {
                 Serving 8 Local Communities
               </p>
               <p className="mt-2 max-w-xs text-body text-white/85">
-                Mobile service-area business based in Heber City, Utah. We come to you.
+                Mobile cleaning serving Heber City and the Heber Valley, Utah. We come to you.
               </p>
             </div>
           </div>

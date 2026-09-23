@@ -299,7 +299,7 @@ export function AreasWeServe() {
               Areas we serve
             </h2>
             <p className="mt-4 max-w-sm text-body text-text-secondary">
-              Based in Heber City, covering eight towns across the surrounding valley.
+              Mobile cleaning across Heber City and the Heber Valley, Utah. We come to these towns. There is no public street address.
             </p>
           </div>
 

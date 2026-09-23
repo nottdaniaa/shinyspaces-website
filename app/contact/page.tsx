@@ -110,8 +110,7 @@ export default function ContactPage() {
               Get in Touch With Shiny Spaces Cleaning
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-body-lg text-text-secondary">
-              {SAB_SUMMARY} Call or email to talk through what your space needs, and we&apos;ll
-              put together an estimate. Nothing is scheduled until you say so.
+              {`${SAB_SUMMARY} Call or email to talk through what your space needs, and we'll put together an estimate. Nothing is scheduled until you say so.`}
             </p>
           </div>
 
@@ -153,7 +152,7 @@ export default function ContactPage() {
                 Service area
               </dt>
               <dd className="mt-2 text-body text-text-primary">
-                Heber Valley, Utah — {formatTownList()}
+                Mobile service only — no public street address. We come to you in {formatTownList()}, Utah.
               </dd>
             </div>
           </dl>

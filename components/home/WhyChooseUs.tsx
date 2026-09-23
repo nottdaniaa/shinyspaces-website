@@ -13,8 +13,8 @@ type TrustPoint = {
 // guarantees, ratings, years in business, or product claims.
 const leftPoints: TrustPoint[] = [
   {
-    title: "Based in Heber City",
-    body: "We cover eight towns across the valley, including Midway, Park City, Kamas, and Charleston.",
+    title: "Mobile service in Utah",
+    body: "We come to you in Heber City, Midway, Park City, Kamas, Hideout, Daniel, Charleston, and Wallsburg. No public street address.",
     icon: MapPinIcon,
   },
   {

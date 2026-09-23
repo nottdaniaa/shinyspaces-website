@@ -45,9 +45,9 @@ export function ServiceAreaHero() {
             <span className="italic text-primary">Heber Valley, Utah</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-body-lg text-text-secondary">
-            Shiny Spaces Cleaning is a mobile service-area business based in Heber City, Utah. We
-            come to homes, rentals, and businesses in the eight Utah communities below. There is
-            no public storefront.
+            Shiny Spaces Cleaning is a mobile cleaning business serving Heber City and the Heber
+            Valley, Utah. We come to homes, rentals, and businesses in the eight communities
+            below. There is no public street address or storefront.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -204,8 +204,8 @@ export function ValleyBand() {
                 offices on the main road.
               </p>
               <p>
-                It also means we are not coming from hours away. We are based in Heber City, Utah,
-                and the towns above are the Utah communities we cover.
+                We come to the property. These are the Utah communities we serve, starting with
+                Heber City. There is no public street address or storefront.
               </p>
             </div>
           </div>

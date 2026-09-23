@@ -14,11 +14,12 @@ export const BUSINESS_URL = `${SITE_URL}/`;
 export const BUSINESS_ID = `${SITE_URL}/#business`;
 
 /**
- * Service-area business with no confirmed street address. City and state are
- * the primary location from the business profile — never a street or ZIP.
+ * Mobile service-area business. There is no public street address and no
+ * storefront. Do not add a street, ZIP, or map pin for a headquarters.
+ * City and state below are the service-area hub only.
  */
 export const SAB_SUMMARY =
-  "Mobile service-area business based in Heber City, Utah. We come to your property. There is no public storefront or street address.";
+  "Mobile cleaning business serving Heber City and the Heber Valley, Utah. We come to your property. There is no public street address or storefront.";
 
 export function formatTownList(towns: readonly string[] = serviceAreas) {
   if (towns.length <= 1) return towns.join("");
@@ -54,8 +55,7 @@ function to24Hour(time: string) {
 
 /**
  * CleaningService is the schema.org subtype of LocalBusiness for this company.
- * Street address is omitted on purpose: none is confirmed, and publishing one
- * would misstate a mobile service-area business.
+ * PostalAddress is city and state only. Never add streetAddress or postalCode.
  */
 export const localBusinessJsonLd = {
   "@context": "https://schema.org",
@@ -63,7 +63,7 @@ export const localBusinessJsonLd = {
   "@id": BUSINESS_ID,
   name: BUSINESS_NAME,
   url: BUSINESS_URL,
-  description: `${BUSINESS_NAME} is a mobile service-area cleaning business based in Heber City, Utah. We come to homes, rentals, and businesses in ${formatTownList()}. There is no public storefront.`,
+  description: `${BUSINESS_NAME} is a mobile cleaning business serving Heber City and the Heber Valley, Utah. We come to homes, rentals, and businesses in ${formatTownList()}. There is no public street address or storefront.`,
   image: `${SITE_URL}/images/og-default.jpg`,
   logo: `${SITE_URL}/images/branding/logo.png`,
   telephone: PHONE_SCHEMA,
