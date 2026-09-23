@@ -6,7 +6,7 @@ import { Container } from "@/components/layout/Container";
 import { serviceContent } from "@/data/serviceContent";
 import { EMAIL_ADDRESS, EMAIL_HREF, PHONE_DISPLAY, PHONE_TEL_HREF, SITE_URL } from "@/lib/constants";
 
-const TITLE = "Cleaning Services in Heber City, UT | ShinySpaces";
+const TITLE = "Cleaning Services in Heber City, UT | Shiny Spaces Cleaning";
 const DESCRIPTION =
   "Residential, commercial, Airbnb turnover, deep, move-in/move-out, post-construction, recurring, and custom cleaning across Heber City and the Heber Valley.";
 
@@ -41,8 +41,8 @@ export default function ServicesHubPage() {
               Cleaning Services for Every Kind of Space
             </h1>
             <p className="mt-5 text-body-lg text-text-secondary">
-              From weekly resets to guest-ready turnovers, ShinySpaces serves homes, rentals, and
-              businesses throughout Heber City and the surrounding Heber Valley.
+              From weekly resets to guest-ready turnovers, Shiny Spaces Cleaning comes to homes,
+              rentals, and businesses throughout Heber City and the Heber Valley, Utah.
             </p>
           </div>
         </Container>
@@ -108,7 +108,7 @@ export default function ServicesHubPage() {
               <Button
                 href={PHONE_TEL_HREF}
                 size="lg"
-                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+                ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
               >
                 Call or Text for a Free Estimate
               </Button>
@@ -116,7 +116,7 @@ export default function ServicesHubPage() {
                 href={EMAIL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+                ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
               >
                 Email Us
               </Button>

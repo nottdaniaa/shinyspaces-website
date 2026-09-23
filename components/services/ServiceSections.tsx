@@ -47,7 +47,7 @@ export function ServiceHero({ service }: { service: ServiceContent }) {
               <Button
                 href={PHONE_TEL_HREF}
                 size="lg"
-                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+                ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
               >
                 Call or Text for a Free Estimate
               </Button>
@@ -55,7 +55,7 @@ export function ServiceHero({ service }: { service: ServiceContent }) {
                 href={EMAIL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+                ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
               >
                 Email Us
               </Button>
@@ -263,8 +263,8 @@ export function ServiceBeforeAfter({
               See the difference
             </h2>
             <p className="mt-4 max-w-md text-body text-text-secondary">
-              Drag the handle to compare the same space before and after a ShinySpaces{" "}
-              {serviceName.toLowerCase()}.
+              Drag the handle to compare the same space before and after{" "}
+              {serviceName.toLowerCase()} from Shiny Spaces Cleaning.
             </p>
           </div>
 
@@ -399,7 +399,7 @@ export function ServiceCTA({ heading, description }: { heading: string; descript
             <Button
               href={PHONE_TEL_HREF}
               size="lg"
-              ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+              ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
             >
               Call or Text for a Free Estimate
             </Button>
@@ -407,7 +407,7 @@ export function ServiceCTA({ heading, description }: { heading: string; descript
               href={EMAIL_HREF}
               variant="secondary"
               size="lg"
-              ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+              ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
             >
               Email Us
             </Button>

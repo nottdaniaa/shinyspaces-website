@@ -4,9 +4,9 @@ import { Container } from "@/components/layout/Container";
 import { JobberEstimateEmbed } from "@/components/forms/JobberEstimateEmbed";
 import { PHONE_DISPLAY, PHONE_TEL_HREF, SITE_URL } from "@/lib/constants";
 
-const TITLE = "Get a Free Estimate | ShinySpaces Cleaning – Heber City, UT";
+const TITLE = "Get a Free Estimate | Shiny Spaces Cleaning – Heber City, UT";
 const DESCRIPTION =
-  "Request a free, no-obligation cleaning estimate from ShinySpaces. Serving Heber City, Midway, Park City, and the surrounding Heber Valley.";
+  "Request a free cleaning estimate from Shiny Spaces Cleaning, a mobile service-area business in Heber City and the Heber Valley, Utah.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const assurances = [
   "Free and no obligation",
   "We confirm the scope and estimate before the visit is scheduled",
-  "Serving Heber City and the surrounding Heber Valley",
+  "Mobile service-area business in Heber City and the Heber Valley, Utah",
 ];
 
 export default function GetEstimatePage() {
@@ -77,7 +77,7 @@ export default function GetEstimatePage() {
                 href={PHONE_TEL_HREF}
                 size="lg"
                 className="mt-5 w-full sm:w-auto"
-                ariaLabel={`Call ShinySpaces at ${PHONE_DISPLAY}`}
+                ariaLabel={`Call Shiny Spaces Cleaning at ${PHONE_DISPLAY}`}
               >
                 Call {PHONE_DISPLAY}
               </Button>

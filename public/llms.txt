@@ -1,15 +1,18 @@
-# ShinySpaces
+# Shiny Spaces Cleaning
 
-> Professional residential, commercial, and Airbnb/vacation-rental cleaning company serving Heber City, Utah and the surrounding Heber Valley.
+> Mobile cleaning business serving Heber City and the Heber Valley, Utah. Residential, commercial, and Airbnb/vacation-rental cleaning. No public street address or storefront.
 
-ShinySpaces provides free, no-obligation estimates. Nothing is scheduled until the customer confirms scope and price. Contact by phone, text, or email — no online booking form exists yet.
+Shiny Spaces Cleaning provides free, no-obligation estimates. Nothing is scheduled until the customer confirms scope and price. Request an estimate at /get-estimate, or contact by phone, text, or email.
 
 ## Contact
 
+- Business name: Shiny Spaces Cleaning
 - Phone / text: (626) 549-9782
 - Email: hello@shinyspaces.info
+- Website: https://shinyspaces.info/
 - Hours: Monday–Saturday 7:00 AM–7:00 PM, Sunday closed
-- Service area: Heber City, Midway, Park City, Kamas, Hideout, Daniel, Charleston, and Wallsburg, Utah
+- Service area (Utah only): Heber City, Midway, Park City, Kamas, Hideout, Daniel, Charleston, and Wallsburg
+- Location type: mobile service-area business. We come to the property. There is no street address or public storefront.
 
 ## Services
 

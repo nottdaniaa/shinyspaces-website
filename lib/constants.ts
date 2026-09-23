@@ -2,10 +2,15 @@
 // data all key off this. Update here only, never inline elsewhere.
 export const SITE_URL = "https://shinyspaces.info";
 
+// Exact Google Business Profile name. Use this wherever the business is named.
+export const BUSINESS_NAME = "Shiny Spaces Cleaning";
+
 // Confirmed in docs/02-business-profile.md §2 — do not change without updating that source of truth.
 export const PHONE_DISPLAY = "(626) 549-9782";
 export const PHONE_TEL_HREF = "tel:+16265499782";
 export const PHONE_SMS_HREF = "sms:+16265499782";
+// Schema.org telephone. Same number as PHONE_DISPLAY, in international form.
+export const PHONE_SCHEMA = "+1-626-549-9782";
 
 export const EMAIL_ADDRESS = "hello@shinyspaces.info";
 export const EMAIL_HREF = `mailto:${EMAIL_ADDRESS}`;

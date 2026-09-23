@@ -3,65 +3,9 @@ import { Geist, Geist_Mono, Fraunces, Manrope } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileCTABar } from "@/components/layout/MobileCTABar";
-import {
-  EMAIL_ADDRESS,
-  OPENING_HOURS,
-  PHONE_TEL_HREF,
-  SITE_URL,
-  SOCIAL_LINKS,
-} from "@/lib/constants";
-import { serviceAreas } from "@/data/serviceAreas";
+import { BUSINESS_NAME, SITE_URL } from "@/lib/constants";
+import { localBusinessJsonLd } from "@/lib/localBusiness";
 import "./globals.css";
-
-// Schema.org day names, in the same Mon–Sun order as OPENING_HOURS.
-const SCHEMA_DAYS = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
-];
-
-/*
- * Service-area business: no public storefront, so street address is
- * deliberately omitted (still TBD per docs/02-business-profile.md §2) in
- * favor of areaServed, matching Google's guidance for SABs. Hours, phone,
- * email, and social links are all confirmed in lib/constants.ts.
- */
-const organizationJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": `${SITE_URL}/#business`,
-  name: "ShinySpaces",
-  url: SITE_URL,
-  image: `${SITE_URL}/images/og-default.jpg`,
-  logo: `${SITE_URL}/images/branding/logo.png`,
-  telephone: PHONE_TEL_HREF,
-  email: EMAIL_ADDRESS,
-  areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
-  sameAs: SOCIAL_LINKS.map((social) => social.href),
-  openingHoursSpecification: OPENING_HOURS.filter((entry) => entry.hours !== "Closed").map(
-    (entry, index) => {
-      const [opens, closes] = entry.hours.split("–").map((t) => t.trim());
-      return {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: SCHEMA_DAYS[index],
-        opens: to24Hour(opens),
-        closes: to24Hour(closes),
-      };
-    }
-  ),
-};
-
-function to24Hour(time: string) {
-  const [, hourStr, minStr, meridiem] = time.match(/(\d+):(\d+)\s?(AM|PM)/) ?? [];
-  let hour = Number(hourStr);
-  if (meridiem === "PM" && hour !== 12) hour += 12;
-  if (meridiem === "AM" && hour === 12) hour = 0;
-  return `${String(hour).padStart(2, "0")}:${minStr}`;
-}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -85,9 +29,9 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
-const DEFAULT_TITLE = "ShinySpaces | Cleaning Services in Heber City, UT & the Heber Valley";
+const DEFAULT_TITLE = `${BUSINESS_NAME} | Cleaning Services in Heber City, UT & the Heber Valley`;
 const DEFAULT_DESCRIPTION =
-  "ShinySpaces provides residential, commercial, and Airbnb turnover cleaning throughout Heber City, Midway, Park City, and the surrounding Heber Valley. Request a free estimate today.";
+  "Shiny Spaces Cleaning is a mobile service-area business in Heber City, Utah, providing residential, commercial, and Airbnb turnover cleaning across the Heber Valley. Request a free estimate today.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -96,11 +40,11 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    siteName: "ShinySpaces",
+    siteName: BUSINESS_NAME,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
-    images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: "ShinySpaces" }],
+    images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: BUSINESS_NAME }],
   },
   twitter: {
     card: "summary_large_image",
@@ -123,7 +67,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
         <Header />
         <main id="main-content" className="flex-1 pb-20 xl:pb-0">

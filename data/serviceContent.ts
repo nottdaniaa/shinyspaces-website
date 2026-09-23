@@ -78,7 +78,7 @@ export const serviceContent: ServiceContent[] = [
   {
     slug: "residential-cleaning",
     serviceName: "Residential Cleaning",
-    seoTitle: "House Cleaning Services in Heber City, UT | ShinySpaces",
+    seoTitle: "House Cleaning Services in Heber City, UT | Shiny Spaces Cleaning",
     metaDescription:
       "Reliable residential house cleaning in Heber City and the surrounding valley. One-time or recurring plans. Request your free estimate today.",
     h1: "Residential House Cleaning",
@@ -86,13 +86,13 @@ export const serviceContent: ServiceContent[] = [
       "One-time or recurring care for your home, handled by the same team that treats the corners as carefully as the countertops.",
     heroImage: {
       src: "/images/services/residential-cleaning/cozy-living-room.jpg",
-      alt: "Cozy wood-panelled living room with a tidy sectional sofa and rug after a ShinySpaces residential cleaning",
+      alt: "Cozy wood-panelled living room with a tidy sectional sofa and rug after a Shiny Spaces Cleaning residential cleaning",
       width: 1600,
       height: 1067,
     },
     introduction: [
       "Most homes don't need a deep clean every week. They need someone reliable who shows up, works through the whole house, and leaves it genuinely finished.",
-      "ShinySpaces cleans houses throughout Heber City and the surrounding Heber Valley, either as a one-time reset or on a schedule you set. We work through the space room by room rather than to a stopwatch.",
+      "Shiny Spaces Cleaning cleans houses throughout Heber City and the surrounding Heber Valley, either as a one-time reset or on a schedule you set. We work through the space room by room rather than to a stopwatch.",
       "If you're not sure whether you want a single visit or something ongoing, start with one and decide afterwards. Nothing is locked in.",
     ],
     audiences: [
@@ -213,7 +213,7 @@ export const serviceContent: ServiceContent[] = [
   {
     slug: "commercial-cleaning",
     serviceName: "Commercial Cleaning",
-    seoTitle: "Commercial Cleaning Services in Heber City, UT | ShinySpaces",
+    seoTitle: "Commercial Cleaning Services in Heber City, UT | Shiny Spaces Cleaning",
     metaDescription:
       "Flexible commercial cleaning for offices, retail spaces, and small businesses in Heber City and the surrounding area. Get a free quote today.",
     h1: "Commercial Cleaning Services",
@@ -221,13 +221,13 @@ export const serviceContent: ServiceContent[] = [
       "Office and workspace cleaning scheduled around your business hours, not through the middle of them.",
     heroImage: {
       src: "/images/services/commercial-cleaning/office-carpet.jpg",
-      alt: "Modern office cubicles with freshly vacuumed carpet and tidy desks after a ShinySpaces commercial cleaning",
+      alt: "Modern office cubicles with freshly vacuumed carpet and tidy desks after a Shiny Spaces Cleaning commercial cleaning",
       width: 1600,
       height: 1067,
     },
     introduction: [
       "A workspace says something about the business inside it before anyone speaks. Clean floors, wiped surfaces, and emptied bins are the baseline your customers notice only when they're missing.",
-      "ShinySpaces cleans offices and commercial spaces across the Heber Valley, working to a schedule that fits around how your business actually runs — early, late, or on the days that suit you.",
+      "Shiny Spaces Cleaning cleans offices and commercial spaces across the Heber Valley, working to a schedule that fits around how your business actually runs — early, late, or on the days that suit you.",
     ],
     audiences: [
       "Offices and professional workspaces",
@@ -301,7 +301,7 @@ export const serviceContent: ServiceContent[] = [
   {
     slug: "airbnb-turnover-cleaning",
     serviceName: "Airbnb Turnover Cleaning",
-    seoTitle: "Airbnb & Vacation Rental Turnover Cleaning | ShinySpaces",
+    seoTitle: "Airbnb & Vacation Rental Turnover Cleaning | Shiny Spaces Cleaning",
     metaDescription:
       "Fast, reliable Airbnb and short-term rental turnover cleaning across Heber City, Park City, and Midway. Request a turnover cleaning quote today.",
     h1: "Airbnb & Vacation Rental Turnover Cleaning",
@@ -309,13 +309,13 @@ export const serviceContent: ServiceContent[] = [
       "Fast turnovers between guests, so your calendar stays booked and your reviews stay high.",
     heroImage: {
       src: "/images/services/airbnb-turnover-cleaning/modern-living-kitchen.jpg",
-      alt: "Bright open-concept living, dining, and kitchen area with mountain views, ready for the next guest after a ShinySpaces Airbnb turnover cleaning",
+      alt: "Bright open-concept living, dining, and kitchen area with mountain views, ready for the next guest after a Shiny Spaces Cleaning Airbnb turnover cleaning",
       width: 1600,
       height: 1067,
     },
     introduction: [
       "Short-term rentals live and die by the first thirty seconds after a guest walks in. A missed hair in the bathroom or a smudged glass door is the difference between five stars and four.",
-      "ShinySpaces handles turnovers across Heber City, Park City, Midway, and the surrounding valley — resetting the property between bookings so it photographs and presents the way it did on the listing.",
+      "Shiny Spaces Cleaning handles turnovers across Heber City, Park City, Midway, and the surrounding valley — resetting the property between bookings so it photographs and presents the way it did on the listing.",
       "If your checkout and check-in fall on the same day, tell us when you're aiming for and we'll confirm what's workable before you commit.",
     ],
     audiences: [
@@ -373,13 +373,13 @@ export const serviceContent: ServiceContent[] = [
     galleryImages: [
       {
         src: "/images/gallery/bedroom-turnover.png",
-        alt: "Bedroom made up with fresh linens, styled pillows, and rolled towels after a ShinySpaces turnover cleaning",
+        alt: "Bedroom made up with fresh linens, styled pillows, and rolled towels after a Shiny Spaces Cleaning turnover cleaning",
         width: 1451,
         height: 1084,
       },
       {
         src: "/images/gallery/bathroom-finishing-touches.png",
-        alt: "Folded tissue and a tidied counter left as finishing touches after a ShinySpaces cleaning",
+        alt: "Folded tissue and a tidied counter left as finishing touches after a visit from Shiny Spaces Cleaning",
         width: 1173,
         height: 1341,
       },
@@ -392,7 +392,7 @@ export const serviceContent: ServiceContent[] = [
   {
     slug: "recurring-cleaning",
     serviceName: "Recurring Cleaning",
-    seoTitle: "Recurring Cleaning Plans | ShinySpaces – Heber City, UT",
+    seoTitle: "Recurring Cleaning Plans | Shiny Spaces Cleaning – Heber City, UT",
     metaDescription:
       "Weekly, biweekly, or monthly cleaning plans for homes, rentals, and businesses across the Heber Valley. Set your schedule and let us handle the rest.",
     h1: "Recurring Cleaning Plans",
@@ -400,13 +400,13 @@ export const serviceContent: ServiceContent[] = [
       "Weekly, biweekly, or monthly — set a rhythm once and stop thinking about it.",
     heroImage: {
       src: "/images/services/recurring-cleaning/routine-maintenance.jpg",
-      alt: "A ShinySpaces cleaner wiping down an office door during a routine recurring cleaning visit",
+      alt: "A cleaner from Shiny Spaces Cleaning wiping down an office door during a routine recurring cleaning visit",
       width: 1600,
       height: 1067,
     },
     introduction: [
       "The difference between a home that always looks after itself and one that needs rescuing every few months is usually just cadence.",
-      "ShinySpaces runs recurring visits on a weekly, biweekly, or monthly schedule for homes, rentals, and businesses across the Heber Valley. You pick the frequency; we keep it.",
+      "Shiny Spaces Cleaning runs recurring visits on a weekly, biweekly, or monthly schedule for homes, rentals, and businesses across the Heber Valley. You pick the frequency; we keep it.",
       "Schedules aren't fixed forever. If your needs change with the season or your bookings, say so and we'll adjust.",
     ],
     audiences: [
@@ -464,7 +464,7 @@ export const serviceContent: ServiceContent[] = [
   {
     slug: "move-in-move-out-cleaning",
     serviceName: "Move-In / Move-Out Cleaning",
-    seoTitle: "Move-In & Move-Out Cleaning Services | ShinySpaces – Heber City, UT",
+    seoTitle: "Move-In & Move-Out Cleaning Services | Shiny Spaces Cleaning – Heber City, UT",
     metaDescription:
       "Thorough move-in and move-out cleaning for homes throughout the Heber Valley. Start fresh or leave it spotless — request a free estimate.",
     h1: "Move-In / Move-Out Cleaning",
@@ -472,13 +472,13 @@ export const serviceContent: ServiceContent[] = [
       "A thorough clean for the home you're leaving, or the one you're about to live in.",
     heroImage: {
       src: "/images/services/move-in-move-out-cleaning/organized-garage.jpg",
-      alt: "A ShinySpaces cleaner organizing high garage shelving during a move-in/move-out cleaning",
+      alt: "A cleaner from Shiny Spaces Cleaning organizing high garage shelving during a move-in/move-out cleaning",
       width: 1600,
       height: 1067,
     },
     introduction: [
       "An empty house hides nothing. Once the furniture is gone, every mark behind an appliance and every skipped corner of a closet is suddenly visible — to a landlord, a buyer, or you.",
-      "ShinySpaces cleans homes at both ends of a move across the Heber Valley: leaving one properly finished, or making the next one genuinely yours before the boxes arrive.",
+      "Shiny Spaces Cleaning cleans homes at both ends of a move across the Heber Valley: leaving one properly finished, or making the next one genuinely yours before the boxes arrive.",
     ],
     audiences: [
       "Tenants preparing to hand back a property",
@@ -535,7 +535,7 @@ export const serviceContent: ServiceContent[] = [
     galleryImages: [
       {
         src: "/images/gallery/bedroom-vacuumed-carpet.png",
-        alt: "Empty bedroom with freshly vacuumed carpet after a ShinySpaces cleaning",
+        alt: "Empty bedroom with freshly vacuumed carpet after a visit from Shiny Spaces Cleaning",
         width: 1119,
         height: 1406,
       },
@@ -548,7 +548,7 @@ export const serviceContent: ServiceContent[] = [
   {
     slug: "deep-cleaning",
     serviceName: "Deep Cleaning",
-    seoTitle: "Deep Cleaning Services in Heber City, UT | ShinySpaces",
+    seoTitle: "Deep Cleaning Services in Heber City, UT | Shiny Spaces Cleaning",
     metaDescription:
       "A thorough, top-to-bottom deep clean for your home across Heber City and the surrounding Heber Valley. Request your free estimate today.",
     h1: "Deep Cleaning Services",
@@ -559,13 +559,13 @@ export const serviceContent: ServiceContent[] = [
     // real work, not a stand-in.
     heroImage: {
       src: "/images/services/deep-cleaning/after.jpg",
-      alt: "Oven interior after a ShinySpaces deep cleaning, spotless and free of residue",
+      alt: "Oven interior after a Shiny Spaces Cleaning deep cleaning, spotless and free of residue",
       width: 1600,
       height: 1067,
     },
     introduction: [
       "A regular clean keeps a home presentable. A deep clean deals with what regular cleaning never quite gets to — the build-up inside the oven, the film along a baseboard, the grime in a grout line.",
-      "ShinySpaces takes deep cleans room by room across the Heber Valley, spending the time those jobs actually require rather than rushing them into a standard visit.",
+      "Shiny Spaces Cleaning takes deep cleans room by room across the Heber Valley, spending the time those jobs actually require rather than rushing them into a standard visit.",
     ],
     audiences: [
       "Homes that haven't had a thorough clean in a while",
@@ -617,13 +617,13 @@ export const serviceContent: ServiceContent[] = [
     beforeAfterMedia: {
       before: {
         src: "/images/services/deep-cleaning/before.jpg",
-        alt: "Oven interior before a ShinySpaces deep cleaning, with baked-on grease and residue on the racks and floor",
+        alt: "Oven interior before a Shiny Spaces Cleaning deep cleaning, with baked-on grease and residue on the racks and floor",
         width: 1600,
         height: 1067,
       },
       after: {
         src: "/images/services/deep-cleaning/after.jpg",
-        alt: "The same oven interior after a ShinySpaces deep cleaning, spotless and free of residue",
+        alt: "The same oven interior after a Shiny Spaces Cleaning deep cleaning, spotless and free of residue",
         width: 1600,
         height: 1067,
       },
@@ -643,7 +643,7 @@ export const serviceContent: ServiceContent[] = [
     // No SEO spec exists for this service in docs/03-seo-strategy.md. Title,
     // meta, and H1 below are drafted here and should be reviewed against that
     // document when it is next updated.
-    seoTitle: "Post-Construction Cleaning in Heber City, UT | ShinySpaces",
+    seoTitle: "Post-Construction Cleaning in Heber City, UT | Shiny Spaces Cleaning",
     metaDescription:
       "Detailed post-construction and post-renovation cleaning across Heber City and the Heber Valley, clearing dust and debris so the space is ready to use.",
     h1: "Post-Construction Cleaning",
@@ -651,13 +651,13 @@ export const serviceContent: ServiceContent[] = [
       "Detailed cleanup after a build or renovation, so the space is actually ready to use.",
     heroImage: {
       src: "/images/services/post-construction-cleaning/after.jpg",
-      alt: "Open-concept room after a ShinySpaces post-construction cleaning, with the concrete floor fully cleared of dust and debris",
+      alt: "Open-concept room after a Shiny Spaces Cleaning post-construction cleaning, with the concrete floor fully cleared of dust and debris",
       width: 1600,
       height: 1067,
     },
     introduction: [
       "Construction dust gets everywhere, and it keeps reappearing for days after the trades leave. Getting a finished space genuinely usable takes a different kind of clean from a normal visit.",
-      "ShinySpaces handles post-construction and post-renovation cleanup across the Heber Valley, clearing the dust and debris left behind so the room can be lived in or opened to customers.",
+      "Shiny Spaces Cleaning handles post-construction and post-renovation cleanup across the Heber Valley, clearing the dust and debris left behind so the room can be lived in or opened to customers.",
     ],
     audiences: [
       "Homeowners finishing a renovation",
@@ -706,13 +706,13 @@ export const serviceContent: ServiceContent[] = [
     beforeAfterMedia: {
       before: {
         src: "/images/services/post-construction-cleaning/before.jpg",
-        alt: "Open-concept room mid-renovation before a ShinySpaces post-construction cleaning, with dust and debris covering the concrete floor",
+        alt: "Open-concept room mid-renovation before a Shiny Spaces Cleaning post-construction cleaning, with dust and debris covering the concrete floor",
         width: 1600,
         height: 1067,
       },
       after: {
         src: "/images/services/post-construction-cleaning/after.jpg",
-        alt: "The same room after a ShinySpaces post-construction cleaning, with the concrete floor fully cleared of dust and debris",
+        alt: "The same room after a Shiny Spaces Cleaning post-construction cleaning, with the concrete floor fully cleared of dust and debris",
         width: 1600,
         height: 1067,
       },
@@ -727,14 +727,14 @@ export const serviceContent: ServiceContent[] = [
     serviceName: "Custom Cleaning Solutions",
     // No SEO spec exists for this service in docs/03-seo-strategy.md. Drafted
     // here pending review.
-    seoTitle: "Custom Cleaning Solutions in Heber City, UT | ShinySpaces",
+    seoTitle: "Custom Cleaning Solutions in Heber City, UT | Shiny Spaces Cleaning",
     metaDescription:
       "Cleaning built around properties that don't fit a standard checklist, across Heber City and the surrounding Heber Valley. Request a free estimate.",
     h1: "Custom Cleaning Solutions",
     heroDescription: "Every space is different. Tell us what yours needs.",
     heroImage: {
       src: "/images/services/custom-cleaning-solutions/high-dusting.jpg",
-      alt: "A ShinySpaces cleaner using an extended duster to clean a high pendant light fixture as part of a custom cleaning solution",
+      alt: "A cleaner from Shiny Spaces Cleaning using an extended duster to clean a high pendant light fixture as part of a custom cleaning solution",
       width: 1600,
       height: 1067,
     },

@@ -27,7 +27,7 @@ const steps: Step[] = [
     number: "02",
     title: "Receive Your Cleaning Plan",
     description:
-      "ShinySpaces confirms the scope, scheduling, and estimated pricing before the appointment.",
+      "Shiny Spaces Cleaning confirms the scope, scheduling, and estimated pricing before the appointment.",
     checklist: ["Scope confirmed", "Transparent pricing", "Preferred date scheduled", "We handle the details"],
     icon: CalendarIcon,
   },
@@ -229,7 +229,7 @@ export function WhatToExpect() {
             href={PHONE_TEL_HREF}
             size="lg"
             className="shrink-0"
-            ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+            ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
           >
             Call or Text for a Free Estimate
           </Button>

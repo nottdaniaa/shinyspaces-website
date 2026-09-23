@@ -10,7 +10,7 @@ export type GalleryPhoto = {
 };
 
 /*
- * Every photo here is a real completed ShinySpaces job supplied by the business
+ * Every photo here is a real completed Shiny Spaces Cleaning job supplied by the business
  * owner. Alt text describes only what is visible — no invented locations,
  * dates, service names, or customer details. Intrinsic width/height are passed
  * so the browser reserves the correct box before load and nothing shifts.

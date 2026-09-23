@@ -18,15 +18,15 @@ export function Services() {
               Cleaning Services for Every Kind of Space
             </h2>
             <p className="mt-6 max-w-lg text-body-lg text-text-secondary">
-              From weekly resets to guest-ready turnovers, ShinySpaces serves homes, rentals, and
-              businesses throughout Heber City and the surrounding Heber Valley.
+              From weekly resets to guest-ready turnovers, Shiny Spaces Cleaning comes to homes,
+              rentals, and businesses throughout Heber City and the Heber Valley, Utah.
             </p>
           </div>
 
           <div className="relative aspect-[16/9] overflow-hidden rounded-image ring-1 ring-inset ring-border/50 lg:aspect-[4/3]">
             <Image
               src="/images/home/serving-heber-valley.png"
-              alt="Bright living room with panoramic mountain views, representing the communities ShinySpaces serves throughout the Heber Valley"
+              alt="Bright living room with panoramic mountain views, representing the communities Shiny Spaces Cleaning serves throughout the Heber Valley"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
@@ -40,8 +40,7 @@ export function Services() {
                 Serving 8 Local Communities
               </p>
               <p className="mt-2 max-w-xs text-body text-white/85">
-                Based in Heber City and serving nearby communities throughout the surrounding
-                area.
+                Mobile cleaning serving Heber City and the Heber Valley, Utah. We come to you.
               </p>
             </div>
           </div>
@@ -62,7 +61,7 @@ export function Services() {
             href={PHONE_TEL_HREF}
             size="sm"
             className="shrink-0"
-            ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+            ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
           >
             Call or Text
           </Button>

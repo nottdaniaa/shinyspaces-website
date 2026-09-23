@@ -10,9 +10,9 @@ import {
 } from "@/components/about/AboutSections";
 import { SITE_URL } from "@/lib/constants";
 
-const TITLE = "About ShinySpaces | Cleaning Services in Heber City, UT";
+const TITLE = "About Shiny Spaces Cleaning | Cleaning Services in Heber City, UT";
 const DESCRIPTION =
-  "Learn how ShinySpaces approaches cleaning for homes, rentals, and businesses across Heber City and the surrounding Heber Valley, and what every estimate includes.";
+  "Learn how Shiny Spaces Cleaning approaches cleaning for homes, rentals, and businesses across Heber City and the surrounding Heber Valley, and what every estimate includes.";
 
 export const metadata: Metadata = {
   title: TITLE,

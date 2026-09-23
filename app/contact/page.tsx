@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { serviceAreas } from "@/data/serviceAreas";
 import {
+  BUSINESS_NAME,
   EMAIL_ADDRESS,
   EMAIL_HREF,
   JOBBER_REQUEST_URL,
@@ -13,10 +14,10 @@ import {
   PHONE_TEL_HREF,
   SITE_URL,
 } from "@/lib/constants";
+import { formatTownList, SAB_SUMMARY } from "@/lib/localBusiness";
 
-const TITLE = "Contact ShinySpaces | Cleaning Services in Heber City, UT";
-const DESCRIPTION =
-  "Call or email ShinySpaces to discuss cleaning for your home, rental, or business across the Heber Valley, or request a free estimate online.";
+const TITLE = "Contact Shiny Spaces Cleaning | Cleaning Services in Heber City, UT";
+const DESCRIPTION = `Contact ${BUSINESS_NAME}, a mobile service-area business in Heber City, Utah. Call ${PHONE_DISPLAY} or email ${EMAIL_ADDRESS}. No public storefront.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -55,7 +56,7 @@ const contactOptions = [
     description: "The quickest way to reach us. Talk through what you need and get an estimate.",
     actionLabel: PHONE_DISPLAY,
     href: PHONE_TEL_HREF,
-    ariaLabel: `Call ShinySpaces at ${PHONE_DISPLAY}`,
+    ariaLabel: `Call Shiny Spaces Cleaning at ${PHONE_DISPLAY}`,
     icon: PhoneIcon,
     external: false,
   },
@@ -64,7 +65,7 @@ const contactOptions = [
     description: "Prefer to write it out? Send the details and we'll come back to you.",
     actionLabel: EMAIL_ADDRESS,
     href: EMAIL_HREF,
-    ariaLabel: `Email ShinySpaces at ${EMAIL_ADDRESS}`,
+    ariaLabel: `Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`,
     icon: MailIcon,
     external: false,
   },
@@ -73,7 +74,7 @@ const contactOptions = [
     description: "Send the property details and the cleaning you're after from your phone.",
     actionLabel: "Send a text",
     href: PHONE_SMS_HREF,
-    ariaLabel: `Text ShinySpaces at ${PHONE_DISPLAY}`,
+    ariaLabel: `Text Shiny Spaces Cleaning at ${PHONE_DISPLAY}`,
     icon: ClipboardIcon,
     external: false,
   },
@@ -106,13 +107,55 @@ export default function ContactPage() {
               id="contact-heading"
               className="mt-5 text-balance font-display text-h1 font-semibold tracking-tight text-text-primary"
             >
-              Get in Touch With ShinySpaces
+              Get in Touch With Shiny Spaces Cleaning
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-body-lg text-text-secondary">
-              Call or email to talk through what your space needs, and we&apos;ll put together an
-              estimate. Nothing is scheduled until you say so.
+              {`${SAB_SUMMARY} Call or email to talk through what your space needs, and we'll put together an estimate. Nothing is scheduled until you say so.`}
             </p>
           </div>
+
+          <dl className="mx-auto mt-12 grid max-w-3xl gap-x-10 gap-y-8 text-left sm:grid-cols-2">
+            <div>
+              <dt className="font-manrope text-caption font-semibold uppercase tracking-[0.14em] text-accent-gold-hover">
+                Business name
+              </dt>
+              <dd className="mt-2 text-body font-semibold text-text-primary">{BUSINESS_NAME}</dd>
+            </div>
+            <div>
+              <dt className="font-manrope text-caption font-semibold uppercase tracking-[0.14em] text-accent-gold-hover">
+                Phone
+              </dt>
+              <dd className="mt-2">
+                <a
+                  href={PHONE_TEL_HREF}
+                  className="rounded-input text-body font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  {PHONE_DISPLAY}
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="font-manrope text-caption font-semibold uppercase tracking-[0.14em] text-accent-gold-hover">
+                Email
+              </dt>
+              <dd className="mt-2">
+                <a
+                  href={EMAIL_HREF}
+                  className="rounded-input text-body font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  {EMAIL_ADDRESS}
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="font-manrope text-caption font-semibold uppercase tracking-[0.14em] text-accent-gold-hover">
+                Service area
+              </dt>
+              <dd className="mt-2 text-body text-text-primary">
+                Mobile service only — no public street address. We come to you in {formatTownList()}, Utah.
+              </dd>
+            </div>
+          </dl>
         </Container>
       </section>
 
@@ -208,10 +251,10 @@ export default function ContactPage() {
               id="areas-heading"
               className="text-balance font-display text-h2 font-semibold tracking-tight text-text-primary"
             >
-              Serving the Heber Valley and nearby communities
+              Utah communities we come to
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-body text-text-secondary">
-              Based in Heber City, covering these eight towns.
+              {SAB_SUMMARY} These are the only towns we list.
             </p>
           </div>
 
@@ -221,7 +264,7 @@ export default function ContactPage() {
                 key={town}
                 className="rounded-full bg-surface px-5 py-2.5 text-small font-semibold text-text-primary shadow-sm ring-1 ring-border/50"
               >
-                {town}
+                {town}, UT
               </li>
             ))}
           </ul>
@@ -263,7 +306,7 @@ export default function ContactPage() {
                 href={PHONE_TEL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Call or text ShinySpaces at ${PHONE_DISPLAY} for a free estimate`}
+                ariaLabel={`Call or text Shiny Spaces Cleaning at ${PHONE_DISPLAY} for a free estimate`}
               >
                 Call or Text
               </Button>
@@ -271,7 +314,7 @@ export default function ContactPage() {
                 href={EMAIL_HREF}
                 variant="secondary"
                 size="lg"
-                ariaLabel={`Email ShinySpaces at ${EMAIL_ADDRESS}`}
+                ariaLabel={`Email Shiny Spaces Cleaning at ${EMAIL_ADDRESS}`}
               >
                 Email Us
               </Button>

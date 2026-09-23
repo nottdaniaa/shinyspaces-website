@@ -44,7 +44,7 @@ export const services: Service[] = [
     tone: "gold",
     photo: {
       src: "/images/services/airbnb-turnover-cleaning/modern-living-kitchen.jpg",
-      alt: "Bright open-concept living, dining, and kitchen area with mountain views, ready for the next guest after a ShinySpaces Airbnb turnover cleaning",
+      alt: "Bright open-concept living, dining, and kitchen area with mountain views, ready for the next guest after a Shiny Spaces Cleaning Airbnb turnover cleaning",
     },
   },
   {
@@ -57,7 +57,7 @@ export const services: Service[] = [
     tone: "neutral",
     photo: {
       src: "/images/services/residential-cleaning/cozy-living-room.jpg",
-      alt: "Cozy wood-paneled living room with a tidy sectional sofa and rug after a ShinySpaces residential cleaning",
+      alt: "Cozy wood-paneled living room with a tidy sectional sofa and rug after a Shiny Spaces Cleaning residential cleaning",
     },
   },
   {
@@ -70,7 +70,7 @@ export const services: Service[] = [
     tone: "teal",
     photo: {
       src: "/images/services/commercial-cleaning/office-carpet.jpg",
-      alt: "Modern office cubicles with freshly vacuumed carpet and tidy desks after a ShinySpaces commercial cleaning",
+      alt: "Modern office cubicles with freshly vacuumed carpet and tidy desks after a Shiny Spaces Cleaning commercial cleaning",
     },
   },
   {
@@ -84,11 +84,11 @@ export const services: Service[] = [
     beforeAfter: {
       before: {
         src: "/images/services/post-construction-cleaning/before.jpg",
-        alt: "Open-concept room mid-renovation before a ShinySpaces post-construction cleaning, with dust and debris covering the concrete floor",
+        alt: "Open-concept room mid-renovation before a Shiny Spaces Cleaning post-construction cleaning, with dust and debris covering the concrete floor",
       },
       after: {
         src: "/images/services/post-construction-cleaning/after.jpg",
-        alt: "The same room after a ShinySpaces post-construction cleaning, with the concrete floor fully cleared of dust and debris",
+        alt: "The same room after a Shiny Spaces Cleaning post-construction cleaning, with the concrete floor fully cleared of dust and debris",
       },
     },
   },
@@ -102,7 +102,7 @@ export const services: Service[] = [
     tone: "gold",
     photo: {
       src: "/images/services/recurring-cleaning/routine-maintenance.jpg",
-      alt: "A ShinySpaces cleaner wiping down an office door during a routine recurring cleaning visit",
+      alt: "A cleaner from Shiny Spaces Cleaning wiping down an office door during a routine recurring cleaning visit",
     },
   },
   {
@@ -115,7 +115,7 @@ export const services: Service[] = [
     tone: "neutral",
     photo: {
       src: "/images/services/custom-cleaning-solutions/high-dusting.jpg",
-      alt: "A ShinySpaces cleaner using an extended duster to clean a high pendant light fixture as part of a custom cleaning solution",
+      alt: "A cleaner from Shiny Spaces Cleaning using an extended duster to clean a high pendant light fixture as part of a custom cleaning solution",
     },
   },
   {
@@ -128,7 +128,7 @@ export const services: Service[] = [
     tone: "neutral",
     photo: {
       src: "/images/services/move-in-move-out-cleaning/organized-garage.jpg",
-      alt: "A ShinySpaces cleaner organizing high garage shelving during a move-in/move-out cleaning",
+      alt: "A cleaner from Shiny Spaces Cleaning organizing high garage shelving during a move-in/move-out cleaning",
     },
   },
   {
@@ -142,11 +142,11 @@ export const services: Service[] = [
     beforeAfter: {
       before: {
         src: "/images/services/deep-cleaning/before.jpg",
-        alt: "Oven interior before a ShinySpaces deep cleaning, with baked-on grease and residue on the racks and floor",
+        alt: "Oven interior before a Shiny Spaces Cleaning deep cleaning, with baked-on grease and residue on the racks and floor",
       },
       after: {
         src: "/images/services/deep-cleaning/after.jpg",
-        alt: "The same oven interior after a ShinySpaces deep cleaning, spotless and free of residue",
+        alt: "The same oven interior after a Shiny Spaces Cleaning deep cleaning, spotless and free of residue",
       },
     },
   },
